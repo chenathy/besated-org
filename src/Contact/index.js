@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Form, ButtonToolbar, Button, Schema } from 'rsuite'; 
 import { IoMdContact } from "react-icons/io";
 import { MdBusinessCenter } from "react-icons/md";
@@ -6,15 +6,56 @@ import { MdEmail } from "react-icons/md";
 import { MdPhone } from "react-icons/md";
 import { MdLocationPin } from "react-icons/md";
 import { MdNaturePeople } from "react-icons/md";
-import { MdSavings } from "react-icons/md";
 import { FaSackDollar } from "react-icons/fa6";
 import 'rsuite/dist/rsuite.min.css';
 import '../App.css'
 import familyLogo from './bestated_family.jpg'
 
+
 const ContactPage = () =>{
+
+    const [formValue, setFormValue] = useState({
+        firstName: '',
+        lastName: '',
+        companyName: '',
+        email: '',
+        phone: '',
+        state: '',
+        beneficiaries: '',
+        assets: ''
+    })
+
+    const handleChange = (value) => {
+        setFormValue(value);
+    }
+
+    const handleSubmit = async () => {
+        console.log(`formValue: ${JSON.stringify( formValue )}`)
+        // try {
+        //     const response = await fetch(
+        //         'https://chenanthy-backend-server.com/api/', 
+        //         {
+        //             method: 'POST', 
+        //             headers: {'Content-Type': 'application/json'},
+        //             body: JSON.stringify(formValue)
+        //         }
+        //     );
+            
+        //     if (!response.ok) {
+        //         throw new Error('API was not being sent POST successfullu')
+        //     }
+
+        //     const data = await response.json();
+        //     console.log('Success: ', data);
+
+        // } catch (error) {
+        //     console.log('Error:', error);
+        // }
+    } 
+
     return (
         <div className='container'>
+
             <div className='content'>
 
             <img
@@ -29,7 +70,11 @@ const ContactPage = () =>{
 
             <br/>
 
-            <Form fluid>
+            <Form fluid
+                formValue={formValue} 
+                onChange={handleChange} 
+                onSubmit={handleSubmit}
+            >
                 <div className='form'>
                     <IoMdContact className='icon-layout'/>
                     <div style={{ display: 'flex', flexGrow: 1 }}>
@@ -95,7 +140,11 @@ const ContactPage = () =>{
 
                 <div className='form'>
                     <Form.Group className='form-group'>
-                        <Button appearance="primary" type='submit'>Submit</Button>
+                        <Button 
+                            appearance="primary" 
+                            type='submit'
+                            onClick={handleSubmit}
+                        >Submit</Button>
                     </Form.Group>
                 </div>
 
