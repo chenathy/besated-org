@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Form, ButtonToolbar, Button, Schema } from 'rsuite'; 
+import { Form, ButtonToolbar, Button, Schema, Message } from 'rsuite'; 
 import { IoMdContact } from "react-icons/io";
 import { MdBusinessCenter } from "react-icons/md";
 import { MdEmail } from "react-icons/md";
@@ -10,9 +10,13 @@ import { FaSackDollar } from "react-icons/fa6";
 import 'rsuite/dist/rsuite.min.css';
 import '../App.css'
 import familyLogo from './bestated_family.jpg'
+import NotificationMessage from '../Notification';
 
 
 const ContactPage = () =>{
+
+    const [message, setMessage] = useState('');
+    const [messageType, setMessageType] = useState('info');
 
     const [formValue, setFormValue] = useState({
         firstName: '',
@@ -29,8 +33,9 @@ const ContactPage = () =>{
         setFormValue(value);
     }
 
-    const handleSubmit = async () => {
-        console.log(`formValue: ${JSON.stringify( formValue )}`)
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        console.log(`formValue: ${JSON.stringify( formValue )}`);
         // try {
         //     const response = await fetch(
         //         'https://chenanthy-backend-server.com/api/', 
@@ -51,6 +56,9 @@ const ContactPage = () =>{
         // } catch (error) {
         //     console.log('Error:', error);
         // }
+    
+        setMessage('Your Info Submitted Successfully!');
+        setMessageType('success');
     } 
 
     return (
@@ -147,7 +155,12 @@ const ContactPage = () =>{
                         >Submit</Button>
                     </Form.Group>
                 </div>
-
+                {message && (
+                    <NotificationMessage 
+                        response={messageType}
+                        message={message}
+                    />
+                )}
             </Form>
             </div>
         </div>

@@ -1,3 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@600&display=swap');
+
+.navbar {
+    background-color: #F5F5F5;
+    /* overflow: hidden; */
+    display: flex;
+    align-items: center; 
+    position: relative;
+    height: 100px;
+}
+
+.navbar .logo {
+    width: 152.14px;
+    height: 30px; 
+    margin-top: 10px; 
+    margin-left: 120px;
+}
+
+.navbar .ul {
+    position: absolute;
+    top: 27px;
+    left: 661px;
+    /* width: 659px; 
+    height: 46px;   */
+    align-items: center;
+    align-content: flex-start;
+}
+
+.navbar .ul ul {
+    list-style-type: none;
+    gap: 20px;
+    padding: 0;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.navbar li {
+    display: flex;
+    align-items: center;
+}
+
+.navbar li a {
+    height: 26;
+    width: auto;
+    display: block;
+    color: #23395B;
+    text-align: left; 
+    padding: 14px 20px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Public Sans', sans-serif; 
+    font-size: 18px; 
+    font-weight: 600; 
+    line-height: 25.2px;
+}
+
+.navbar .contact-btn {
+    position: relative; 
+    max-width: 147px;
+    max-height: 46px;
+    border-radius: 4px;
+    background: #F1B23E;
+    gap: 10px;
+    padding: 10px, 15px, 10px, 15px;
+}
+
+.navbar .contact-btn a {
+    width: 117px;
+    height: 26px;
+    color: #141414;
+    font-family: 'Public Sans', sans-serif; 
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+
+
 .container {
     display: flex;
     justify-content: center; 
