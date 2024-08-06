@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Pic1 from './Pic1.png';
-
+import arrow from './noun-arrow.svg'
 
 const HomePage = () => {
 
@@ -49,6 +49,17 @@ const HomePage = () => {
             </div>
 
             <hr/>
+
+            <div className='Wills'>
+                <img 
+                    src={arrow} 
+                    alt='Arrow' 
+                    className='Pic'
+                />
+
+                <div className='Box'></div>
+                
+            </div>
     
         </div>
 

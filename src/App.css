@@ -53,7 +53,7 @@
     align-items: center; 
     position: relative;
     height: 100px;
-    width: 100vw;
+    width: 1440px;
 }
 
 .navbar .logo {
@@ -113,6 +113,7 @@
 .HomePage {
     width: 1440px;
     height: 4096px;
+    background-color: #F5F5F5;
 }
 
 .HomePage .Hero {
@@ -232,6 +233,31 @@
     justify-content: center;
     color: #141414;
 }
+
+.HomePage .Wills {
+    width: 1200px;
+    height: 1320px;
+    position: absolute;
+    top: 1125px;
+    margin-left: 120px;
+
+    border-color: black;
+    border-width: 1px;
+    border-style: dashed;
+}
+
+
+.HomePage .Wills .Pic {
+    width: 125px;
+    height: 125px;
+    position: relative;
+    /* top: 1585px; 
+    left: 651px; */
+    top: 460px;
+    left: 531px;
+}
+
+
 
 
 
