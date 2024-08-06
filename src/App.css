@@ -178,7 +178,7 @@
 
 .HomePage hr {
     width: 1200px;
-    /* top: 728px; */
+    top: 728px;
     margin-left: 120px;
     border: 2px solid #4BBEDB;
 }
@@ -188,6 +188,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-items: center;
     max-height: 236px;
     top: 728px;
     padding: 32px 318px 32px 318px;
@@ -200,15 +201,14 @@
 }
 
 .HomePage .Numbers .Number {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     max-width: 162px;
     height: 172px;
     gap: 5px;
-
-    border-color: gray;
-    border-width: 1px;
-    border-style: dashed;
+    text-align: center;
 }
 
 .Numbers .Number h1 {
@@ -218,12 +218,7 @@
     font-size: 56px;
     font-weight: 600;
     line-height: 63px;
-    text-align: center;
     color: #23395B;
-
-    border-color: gray;
-    border-width: 1px;
-    border-style: dashed;
 }
 
 .Numbers .Number p{
@@ -236,10 +231,6 @@
     text-align: center;
     justify-content: center;
     color: #141414;
-
-    border-color: gray;
-    border-width: 1px;
-    border-style: dashed;
 }
 
 
