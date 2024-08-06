@@ -120,9 +120,14 @@
     justify-content: center;
     max-width: 1440px;
     max-height: 628px;
-    width: 100%;
     top: 100px;
     padding: 100px 120px 100px 120px;
+    /* padding-top: 100px;
+    padding-right: 70px;
+    padding-bottom: 100px; */
+    /* margin: 100px 120px 100px 120px; */
+    /* margin-left: 100px;
+    margin-right: 100px; */
     gap: 96px;
     border-color: black;
     border-width: 1px;
@@ -140,11 +145,11 @@
     width: 576px;
     height: 189px;
     font-family: 'Bricolage Grotesque'; 
-    font-size: 52px;
+    font-size: 54px;
     font-weight: 600;
     line-height: 63px;
     text-align: left;
-
+    color: #23395B;
 }
 
 .Hero .Text-Btn h4 {
@@ -171,8 +176,62 @@
     border-radius: 8px;
 }
 
+.HomePage hr {
+    width: 1200px;
+    top: 728px;
+    margin-left: 120px;
+    border: 2px solid #4BBEDB;
+}
 
 
+.HomePage .Numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    max-height: 236px;
+    top: 728px;
+    padding: 32px 318px 32px 318px;
+    padding-left: 120px;
+    gap: 160px ;
+
+    border-color: black;
+    border-width: 1px;
+    border-style: dashed;
+}
+
+.HomePage .Numbers .Number {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 162px;
+    height: 172px;
+    gap: 5px;
+    text-align: center;
+}
+
+.Numbers .Number h1 {
+    width: 120px;
+    height: 63px;
+    font-family: 'Bricolage Grotesque'; 
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 63px;
+    color: #23395B;
+}
+
+.Numbers .Number p{
+    width: 162px;
+    height: 51px;
+    font-family: 'Public Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25.2px;
+    text-align: center;
+    justify-content: center;
+    color: #141414;
+}
 
 
 
