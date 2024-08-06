@@ -122,7 +122,10 @@
     max-height: 628px;
     width: 100%;
     top: 100px;
-    padding: 100px 120px 100px 120px;
+    /* padding: 100px 120px 100px 120px; */
+    padding-top: 100px;
+    padding-right: 70px;
+    padding-bottom: 100px;
     gap: 96px;
     border-color: black;
     border-width: 1px;
