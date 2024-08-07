@@ -191,7 +191,6 @@
 
 .HomePage hr {
     width: 1200px;
-    top: 728px;
     margin-left: 120px;
     border: 2px solid #4BBEDB;
 }
@@ -257,11 +256,13 @@
     position: relative;
     top: 161px;
     margin-left: 120px;
-
+    display: flex;
+    flex-direction: column;
 
     border-color: black;
     border-width: 1px;
     border-style: dashed;
+
 }
 
 
@@ -297,7 +298,7 @@
     width: 125px;
     height: 125px;
     position: relative;
-    top: 460px;
+    top: 260px;
     left: 490px;
     z-index: 3;
     background-color: transparent;
@@ -309,7 +310,6 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: baseline;
 }
 
 .group label {
@@ -343,7 +343,7 @@
 
 .box p {
     width: 472px;
-    height: 126px;
+    max-height: 177px;
     font-family: 'Public Sans', sans-serif;
     font-weight: 400;
     size: 18px;
@@ -365,7 +365,7 @@
     ;
 }
 
-.box a {
+/* .box a {
     width: 114px;
     height: 26px;
     cursor: pointer;
@@ -375,10 +375,11 @@
     size: 18px;
     line-height: 25.2px;
     color: #23395B;
-}
+    margin-top: 10px;
+} */
 
 
-.Wills .callout-box {
+.callout-box {
     max-width: 1200px;
     max-height: 585px;
     background-color: #23395B;
@@ -386,7 +387,8 @@
     padding: 64px;
     gap: 64px;
     position: relative;
-    top: 735px;
+    margin-top: auto;
+    margin-bottom: 0;
     left: 0px;
     display: flex;
 }

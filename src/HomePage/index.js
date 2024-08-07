@@ -63,8 +63,8 @@ const HomePage = () => {
                         As a result, families are left unprepared if worse comes to worst and there is an unexpected tragedy.
                     </p>
 
-                    {/* <p id="link-learn-more">Learn more &gt;</p> */}
-                    <a href='temp'>Learn more &gt;</a>
+                    <p id="link-learn-more">Learn more &gt;</p>
+                    {/* <a href='temp'>Learn more &gt;</a> */}
                 </div>
 
                 <div className='box box2'>
@@ -80,7 +80,7 @@ const HomePage = () => {
                         Bestated uses AI, Large Language Models (LLMs), 
                         and attorney partners to reduce costs and increase accessibility for these complex legal needs.
                     </p>
-
+                    {/* <a href='temp'>Learn more &gt;</a> */}
                     <p id="link-learn-more">Learn more &gt;</p>
 
                 </div>
