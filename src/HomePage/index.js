@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import Pic1 from './Pic1.png';
+import Hero from './HeroImage.svg'
 import arrow from './noun-arrow.svg'
 
 const HomePage = () => {
@@ -20,13 +20,10 @@ const HomePage = () => {
                     </div>
                 </div>
 
-                <div className='Pic'>
-                    <img 
-                        src={Pic1} 
-                        alt='HomePageLogo1' 
-                        className='Pic' 
-                    />
-                </div>
+                <img 
+                    src={Hero} 
+                    alt='HomePageLogo1'
+                />
 
             </div>
 
@@ -51,13 +48,47 @@ const HomePage = () => {
             <hr/>
 
             <div className='Wills'>
+
+                <div className='Box Box1'>
+
+                    <div className='group'>
+                        <label>THE PROBLEM</label>
+                        <h2>Wills are complicated, expensive, and grim</h2>
+                    </div>
+
+                    <p>
+                        Understandably, many avoid creating estate plans, wills, medical directives, and powers of attorney. 
+                        <br/><br/>
+                        As a result, families are left unprepared if worse comes to worst and there is an unexpected tragedy.
+                    </p>
+
+                    {/* <p id="link-learn-more">Learn more &gt;</p> */}
+                    <a href='temp'>Learn more &gt;</a>
+                </div>
+
+                <div className='Box Box2'>
+                    <div className='group'>
+                        <label>OUR SOLUTION</label>
+                        <h2>Employer-sponsored estate planning</h2>
+                    </div>
+
+                    <p>
+                        Parental leave, disability, and life insurance were once novel employee benefits. 
+                        We believe employer-sponsored estate planning documents should join them. 
+                        <br/><br/>
+                        Bestated uses AI, Large Language Models (LLMs), 
+                        and attorney partners to reduce costs and increase accessibility for these complex legal needs.
+                    </p>
+
+                    <p id="link-learn-more">Learn more &gt;</p>
+
+                </div>
+
                 <img 
                     src={arrow} 
                     alt='Arrow' 
-                    className='Pic'
+                    className='Box Pic'
                 />
-
-                <div className='Box'></div>
                 
             </div>
     

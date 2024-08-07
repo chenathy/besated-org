@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap');
 
 
 /* Buttons  */
@@ -171,7 +171,8 @@
 }
 
 
-.HomePage .Hero .Pic {
+
+.Hero img {
     width: 528px;
     height: 428px;
     border-radius: 8px;
@@ -241,9 +242,47 @@
     top: 1125px;
     margin-left: 120px;
 
+
     border-color: black;
     border-width: 1px;
     border-style: dashed;
+}
+
+
+.HomePage .Wills .Box {
+    width: 568px;
+    border-radius: 8px;
+    padding: 48px;
+    gap: 32px;
+    background-color: #FFFFFF;
+    position: absolute;
+
+    box-shadow: 0px 4px 4px -4px #0C0C0D0D;
+
+    box-shadow: 0px 16px 32px -4px #0C0C0D1A;
+
+
+    display: flex;
+    flex-direction: column;
+
+
+    border-color: gray;
+    border-width: 1px;
+    border-style: dashed;
+}
+
+.HomePage .Wills .Box1 {
+    max-height: 524px;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.HomePage .Wills .Box2 {
+    max-height: 575px;
+    top: 65px;
+    left: 632px;
+    z-index: 2;
 }
 
 
@@ -255,6 +294,81 @@
     left: 651px; */
     top: 460px;
     left: 531px;
+    z-index: 3;
+    background-color: transparent;
+}
+
+.Box .group {
+    width: 472px;
+    height: 212px;
+
+    border-color: gray;
+    border-width: 1px;
+    border-style: dashed;
+}
+
+.group label {
+    width: 154.91px;
+    height: 26px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 500;
+    size: 18px;
+    line-height: 25.2px;
+    letter-spacing: 30%;
+    color: #A13D63;
+}
+
+.group h2 {
+    width: 472px;
+    height: 162px;
+    position: relative;
+    top: 30px;
+    left: 0px;
+    font-family: 'Bricolage Grotesque'; 
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 52px;
+    color: #23395B;
+}
+
+
+.Box p {
+    width: 472px;
+    height: 126px;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+    size: 18px;
+    line-height: 25.2px;
+    color: #141414;
+}
+
+
+#link-learn-more {
+    width: 114px;
+    height: 26px;
+    cursor: pointer;
+    font-family: 'Public Sans', sans-serif;
+    text-decoration: underline;
+    font-weight: 600;
+    size: 18px;
+    line-height: 25.2px;
+    color: #23395B;
+    ;
+}
+
+.Box a {
+    width: 114px;
+    height: 26px;
+    cursor: pointer;
+    text-decoration: underline;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 600;
+    size: 18px;
+    line-height: 25.2px;
+    color: #23395B;
 }
 
 
