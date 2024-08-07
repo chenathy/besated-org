@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Hero from './HeroImage.svg';
 import arrow from './noun-arrow.svg';
 import Wills from './WillsImage.svg';
+import Beneficiary from './BeneficiaryImage.svg'
 
 const HomePage = () => {
 
@@ -110,6 +111,20 @@ const HomePage = () => {
 
             <hr/>
 
+            <div className='API'>
+                <img 
+                    src={Beneficiary}
+                    alt='Beneficiary'
+                />
+                <div className='text-btn'>
+                    <div className='group'>
+                        <label>FINANCIAL ADVISORS AND ESTATE ATTORNEYS</label>
+                        <h2>Our Beneficiary API will simplify the process of updating your will.</h2>
+                    </div>
+                    <p>Stop wasting time updating each and every financial institution every time there’s a change in an estate plan or will. Automate with Bestated!</p>
+                    <button className='about-btn'>Learn more</button>
+                </div>
+            </div>
             
 
         </div>
