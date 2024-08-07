@@ -122,6 +122,10 @@
     width: 1440px;
     height: 4096px;
     background-color: #F5F5F5;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* HomePage: Hero */
@@ -254,10 +258,12 @@
     width: 1200px;
     height: 1320px;
     position: relative;
-    top: 161px;
-    margin-left: 120px;
+    top: 160px;
+    
     display: flex;
     flex-direction: column;
+
+    margin-bottom: 300px;
 
     border-color: black;
     border-width: 1px;
