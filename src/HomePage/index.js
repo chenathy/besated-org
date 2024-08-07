@@ -108,6 +108,10 @@ const HomePage = () => {
                 </div>
             </div>
 
+            <hr/>
+
+            
+
         </div>
 
     )

@@ -124,6 +124,9 @@
     background-color: #F5F5F5;
 }
 
+/* HomePage: Hero */
+
+
 .HomePage .Hero {
     display: flex;
     justify-content: center;
@@ -194,6 +197,8 @@
 }
 
 
+/* HomePage: Numbers */
+
 .HomePage .Numbers {
     display: flex;
     justify-content: center;
@@ -243,11 +248,14 @@
     color: #141414;
 }
 
+
+/* HomePage: Wills */
+
 .HomePage .Wills {
     width: 1200px;
     height: 1320px;
-    position: absolute;
-    top: 1125px;
+    position: relative;
+    top: 161px;
     margin-left: 120px;
 
 
@@ -258,7 +266,7 @@
 
 
 .HomePage .Wills .box {
-    width: 568px;
+    max-width: 568px;
     border-radius: 8px;
     padding: 48px;
     gap: 32px;
@@ -289,8 +297,6 @@
     width: 125px;
     height: 125px;
     position: relative;
-    /* top: 1585px; 
-    left: 651px; */
     top: 460px;
     left: 531px;
     z-index: 3;
@@ -301,9 +307,9 @@
     width: 472px;
     height: 212px;
 
-    border-color: gray;
-    border-width: 1px;
-    border-style: dashed;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
 }
 
 .group label {
@@ -320,11 +326,12 @@
     color: #A13D63;
 }
 
+
 .group h2 {
     width: 472px;
     height: 162px;
     position: relative;
-    top: 30px;
+    top: 10px;
     left: 0px;
     font-family: 'Bricolage Grotesque'; 
     font-size: 48px;
@@ -393,10 +400,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    border-color: white;
-    border-width: 1px;
-    border-style: dashed;
 }
 
 
@@ -406,16 +409,11 @@
 
     display: flex;
     flex-direction: column;
-    justify-content:baseline;
-    align-items: baseline;
-
-    border-color: white;
-    border-width: 1px;
-    border-style: dashed;
+    justify-content: baseline
     
 }
 
-.text-btn .group p {
+.callout-box .text-btn .group p {
     width: 335.79px;
     height: 26px;
     font-family: 'Public Sans', sans-serif;
@@ -423,33 +421,20 @@
     line-height: 25.2px;
     letter-spacing: 3%;
     color: #FFFFFF;
-
-    border-color: white;
-    border-width: 1px;
-    border-style: dashed;
 }
 
-.text-btn .group h2 {
+.callout-box .text-btn .group h2 {
     width: 480px;
     height: 162px;
-    position: relative;
-    top: 50px;
+    /* position: relative;
+    top: 26px; */
     font-family: 'Bricolage Grotesque', sans-serif;
     font-weight: 600;
     font-size: 48px;
     line-height: 54px;
     color: #FFFFFF;
-
-
-    border-color: white;
-    border-width: 1px;
-    border-style: dashed;
 }
 
-.text-btn .group h2, .text-btn .group p {
-    margin: 0;
-    padding: 0;
-}
 
 .text-btn p{
     width: 480px;
