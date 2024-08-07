@@ -1,7 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import Hero from './HeroImage.svg'
-import arrow from './noun-arrow.svg'
+import Hero from './HeroImage.svg';
+import arrow from './noun-arrow.svg';
+import Wills from './WillsImage.svg';
 
 const HomePage = () => {
 
@@ -11,7 +12,7 @@ const HomePage = () => {
         <div className='HomePage'>
 
             <div className='Hero'>
-                <div className='Text-Btn'>
+                <div className='text-btn'>
                     <h1>Help your employees avoid the painful probate process.</h1>
                     <h4>Bestated is the first employer-sponsored will, power of attorneys, and medical drective platform.</h4>
                     <div className='btn'>
@@ -30,15 +31,15 @@ const HomePage = () => {
             <hr/>
 
             <div className='Numbers'>
-                <div className='Number'>
+                <div className='number'>
                     <h1>67%</h1>
                     <p>of US adults don't have a will</p>
                 </div>
-                <div className='Number'>
+                <div className='number'>
                     <h1>72%</h1>
                     <p>of minority adults don’t have a will</p>
                 </div>
-                <div className='Number'>
+                <div className='number'>
                     <h1>80%</h1>
                     <p>of people under 30 don’t have a will</p>
                 </div>
@@ -49,7 +50,7 @@ const HomePage = () => {
 
             <div className='Wills'>
 
-                <div className='Box Box1'>
+                <div className='box box1'>
 
                     <div className='group'>
                         <label>THE PROBLEM</label>
@@ -66,7 +67,7 @@ const HomePage = () => {
                     <a href='temp'>Learn more &gt;</a>
                 </div>
 
-                <div className='Box Box2'>
+                <div className='box box2'>
                     <div className='group'>
                         <label>OUR SOLUTION</label>
                         <h2>Employer-sponsored estate planning</h2>
@@ -87,11 +88,26 @@ const HomePage = () => {
                 <img 
                     src={arrow} 
                     alt='Arrow' 
-                    className='Box Pic'
+                    className='box pic'
                 />
-                
+
+                <div className='callout-box'>
+                    <div className='text-btn'>
+                        <div className='group'>
+                            <p>BENEFIT TO EMPLOYERS</p>
+                            <h2>A unique benefit to attract and retain top talent</h2>
+                        </div>
+                        <p>Employer-sponsored wills provide your employees and their families with peace of mind, while keeping you competitive in today’s recruitment landscape.</p>
+                        <button className='contact-btn'>Learn more</button>
+                    </div>
+                    
+                    <img 
+                        src={Wills} 
+                        alt='HomePageLogo2'
+                    />
+                </div>
             </div>
-    
+
         </div>
 
     )
