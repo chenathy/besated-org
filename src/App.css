@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap');
 
 
 /* Buttons  */
@@ -10,6 +10,10 @@
     padding: 10px 15px 10px 15px;
     gap: 10px;
     background-color: #F1B23E;
+    font-family: 'Public Sans', sans-serif; 
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25.2px;
 }
 
 .contact-btn a {
@@ -23,12 +27,16 @@
 }
 
 .about-btn {
-    max-width: 105px;
+    max-width: 147px;
     max-height: 46px;
     border-radius: 4px;
     padding: 10px 15px 10px 15px;
     gap: 10px;
     background-color:  #D5D6D7;
+    font-family: 'Public Sans', sans-serif; 
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25.2px;
 }
 
 .about-btn a {
@@ -53,7 +61,7 @@
     align-items: center; 
     position: relative;
     height: 100px;
-    width: 100vw;
+    width: 1440px;
 }
 
 .navbar .logo {
@@ -113,7 +121,15 @@
 .HomePage {
     width: 1440px;
     height: 4096px;
+    background-color: #F5F5F5;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+/* HomePage: Hero */
+
 
 .HomePage .Hero {
     display: flex;
@@ -134,14 +150,14 @@
     border-style: dashed;
 }
 
-.HomePage .Hero .Text-Btn {
+.HomePage .Hero .text-btn {
     display: grid;
     width: 576px;
     max-height: 471px;
     gap: 32px;
 }
 
-.Hero .Text-Btn h1 {
+.Hero .text-btn h1 {
     width: 576px;
     height: 189px;
     font-family: 'Bricolage Grotesque'; 
@@ -152,7 +168,7 @@
     color: #23395B;
 }
 
-.Hero .Text-Btn h4 {
+.Hero .text-btn h4 {
     width: 576px;
     height: 118px;
     font-family: 'Public Sans', sans-serif;
@@ -162,7 +178,7 @@
     color: #23395B;
 }
 
-.Hero .Text-Btn .btn {
+.Hero .text-btn .btn {
     display: flex;
     max-width: 284px;
     max-height: 46px;
@@ -170,7 +186,8 @@
 }
 
 
-.HomePage .Hero .Pic {
+
+.Hero img {
     width: 528px;
     height: 428px;
     border-radius: 8px;
@@ -178,11 +195,12 @@
 
 .HomePage hr {
     width: 1200px;
-    top: 728px;
     margin-left: 120px;
     border: 2px solid #4BBEDB;
 }
 
+
+/* HomePage: Numbers */
 
 .HomePage .Numbers {
     display: flex;
@@ -200,7 +218,7 @@
     border-style: dashed;
 }
 
-.HomePage .Numbers .Number {
+.HomePage .Numbers .number {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -211,7 +229,7 @@
     text-align: center;
 }
 
-.Numbers .Number h1 {
+.Numbers .number h1 {
     width: 120px;
     height: 63px;
     font-family: 'Bricolage Grotesque'; 
@@ -221,7 +239,7 @@
     color: #23395B;
 }
 
-.Numbers .Number p{
+.Numbers .number p{
     width: 162px;
     height: 51px;
     font-family: 'Public Sans';
@@ -232,6 +250,242 @@
     justify-content: center;
     color: #141414;
 }
+
+
+/* HomePage: Wills */
+
+.HomePage .Wills {
+    width: 1200px;
+    height: 1320px;
+    position: relative;
+    top: 160px;
+    
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 300px;
+
+    border-color: black;
+    border-width: 1px;
+    border-style: dashed;
+
+}
+
+
+.HomePage .Wills .box {
+    max-width: 568px;
+    border-radius: 8px;
+    padding: 48px;
+    gap: 32px;
+    background-color: #FFFFFF;
+    position: absolute;
+}
+
+.HomePage .Wills .box1 {
+    height: 524px;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 4px 4px -4px #0C0C0D0D;
+    box-shadow: 0px 16px 32px -4px #0C0C0D1A;
+    z-index: 1;
+}
+
+.HomePage .Wills .box2 {
+    height: 545px;
+    top: 65px;
+    left: 632px;
+    box-shadow: 0px 4px 4px -4px #0C0C0D0D;
+    box-shadow: 0px 16px 32px -4px #0C0C0D1A;
+    z-index: 2;
+}
+
+
+.HomePage .Wills .pic {
+    width: 125px;
+    height: 125px;
+    position: relative;
+    top: 260px;
+    left: 490px;
+    z-index: 3;
+    background-color: transparent;
+}
+
+.box .group {
+    width: 472px;
+    height: 212px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.group label {
+    width: 154.91px;
+    height: 26px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 500;
+    size: 18px;
+    line-height: 25.2px;
+    letter-spacing: 30%;
+    color: #A13D63;
+}
+
+
+.group h2 {
+    width: 472px;
+    height: 162px;
+    position: relative;
+    top: 10px;
+    left: 0px;
+    font-family: 'Bricolage Grotesque'; 
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 52px;
+    color: #23395B;
+}
+
+
+.box p {
+    width: 472px;
+    max-height: 177px;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+    size: 18px;
+    line-height: 25.2px;
+    color: #141414;
+}
+
+
+#link-learn-more {
+    width: 114px;
+    height: 26px;
+    cursor: pointer;
+    font-family: 'Public Sans', sans-serif;
+    text-decoration: underline;
+    font-weight: 600;
+    size: 18px;
+    line-height: 25.2px;
+    color: #23395B;
+    ;
+}
+
+/* .box a {
+    width: 114px;
+    height: 26px;
+    cursor: pointer;
+    text-decoration: underline;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 600;
+    size: 18px;
+    line-height: 25.2px;
+    color: #23395B;
+    margin-top: 10px;
+} */
+
+
+.callout-box {
+    max-width: 1200px;
+    max-height: 585px;
+    background-color: #23395B;
+    border-radius: 8px;
+    padding: 64px;
+    gap: 64px;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: 0;
+    left: 0px;
+    display: flex;
+}
+
+
+.callout-box .text-btn {
+    width: 480px;
+    max-height: 457px;
+    gap: 32px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.callout-box .text-btn .group {
+    width: 480px;
+    height: 212px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline
+    
+}
+
+.callout-box .text-btn .group p {
+    width: 335.79px;
+    height: 26px;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 500;
+    line-height: 25.2px;
+    letter-spacing: 3%;
+    color: #FFFFFF;
+}
+
+.callout-box .text-btn .group h2 {
+    width: 480px;
+    height: 162px;
+    /* position: relative;
+    top: 26px; */
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    color: #FFFFFF;
+}
+
+
+.text-btn p{
+    width: 480px;
+    height: 135px;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33.6px;
+    color: #FFFFFF;
+}
+
+.callout-box img {
+    width: 528px;
+    height: 427px;
+    position: relative;
+    top: 20px;
+    left: 12px;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -278,7 +532,7 @@ Form.Control {
 }
 
 
-Button {
+/* Button {
     background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
@@ -287,7 +541,7 @@ Button {
     border-color: black;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 Button:hover {
@@ -296,4 +550,4 @@ Button:hover {
 
 Button[type='submit'] {
     width: 50%;
-}
+} */
