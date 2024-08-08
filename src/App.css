@@ -465,7 +465,7 @@
 }
 
 .HomePage .API {
-    max-width: 120opx;
+    width: 1200px;
     max-height: 428px;
     margin-top: 160px;
     position: relative;
@@ -477,11 +477,25 @@
     border-style: dashed;
 }
 
-.API img {
+.image {
+
     width: 528px;
     height: 428px;
     border-radius: 8px;
+    overflow: hidden;
+    
 }
+
+.API .image img {
+    width: auto;
+    height: 117%;
+    display: flex;
+    position: relative;
+    top: -12px;
+    left: -31px;
+    border-radius: 8px; 
+}
+
 
 .API .text-btn {
     width: 576px;
@@ -489,6 +503,9 @@
     gap: 32px;
     display: flex;
     flex-direction: column;
+    position: relative;
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .API .text-btn .group {
@@ -517,10 +534,6 @@
     line-height: 33.6px;
     color: #141414;
 }
-
-
-
-
 
 
 

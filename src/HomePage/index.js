@@ -112,10 +112,12 @@ const HomePage = () => {
             <hr/>
 
             <div className='API'>
-                <img 
-                    src={Beneficiary}
-                    alt='Beneficiary'
-                />
+                <div className='image'>
+                    <img 
+                        src={Beneficiary}
+                        alt='Beneficiary'
+                    />
+                </div>
                 <div className='text-btn'>
                     <div className='group'>
                         <label>FINANCIAL ADVISORS AND ESTATE ATTORNEYS</label>
