@@ -139,22 +139,29 @@ const ForEmployers = () => {
             </div>
 
             <div className='callout-box'>
-                    <div className='text-btn'>
-                        <div className='group'>
-                            <p>FOR INDIVIDUALS</p>
-                            <h2>Not an employer, but interested in employer-sponsored wills?</h2>
-                        </div>
-                        <p>Whether you want to pay for this benefit yourself or have your employer add it, we’re here to help!</p>
-                        <button className='contact-btn'>Reach out</button>
+                <div className='text-btn'>
+                    <div className='group'>
+                        <p>FOR INDIVIDUALS</p>
+                        <h2>Not an employer, but interested in employer-sponsored wills?</h2>
                     </div>
-                    
-                    <img 
-                        src={CalloutIcon} 
-                        alt='CalloutIcon'
-                    />
+                    <p>Whether you want to pay for this benefit yourself or have your employer add it, we’re here to help!</p>
+                    <button className='contact-btn'>Reach out</button>
                 </div>
+                
+                <img 
+                    src={CalloutIcon} 
+                    alt='CalloutIcon'
+                />
+            </div>
 
+            <div className='CTA'>
+                <h1>Opt in to accessible, <br/>employer-sponsored wills today!</h1> 
+                <div className='btn'>
+                    <button className='contact-btn'>Get in contact</button>
+                </div>
+            </div>
         </div>
+        
     )
 };
 
