@@ -208,6 +208,7 @@
     align-items: center;
     justify-items: center;
     max-height: 236px;
+    max-width: 1440px;
     top: 728px;
     padding: 32px 318px 32px 318px;
     padding-left: 120px;
@@ -258,12 +259,11 @@
     width: 1200px;
     height: 1320px;
     position: relative;
-    top: 160px;
+    margin-top: 160px;
+    margin-bottom: 160px;
     
     display: flex;
     flex-direction: column;
-
-    margin-bottom: 300px;
 
     border-color: black;
     border-width: 1px;
@@ -328,7 +328,8 @@
     font-weight: 500;
     size: 18px;
     line-height: 25.2px;
-    letter-spacing: 30%;
+    letter-spacing: 0.03em;
+    text-align: left;
     color: #A13D63;
 }
 
@@ -427,7 +428,7 @@
     font-family: 'Public Sans', sans-serif;
     font-weight: 500;
     line-height: 25.2px;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
     color: #FFFFFF;
 }
 
@@ -444,7 +445,7 @@
 }
 
 
-.text-btn p{
+.callout-box .text-btn p{
     width: 480px;
     height: 135px;
     font-family: 'Public Sans', sans-serif;
@@ -463,15 +464,76 @@
     border-radius: 8px;
 }
 
+.HomePage .API {
+    width: 1200px;
+    max-height: 428px;
+    margin-top: 160px;
+    position: relative;
+    /* left: 120px; */
+    display: flex;
+
+    border-color: black;
+    border-width: 1px;
+    border-style: dashed;
+}
+
+.image {
+
+    width: 528px;
+    height: 428px;
+    border-radius: 8px;
+    overflow: hidden;
+    
+}
+
+.API .image img {
+    width: auto;
+    height: 117%;
+    display: flex;
+    position: relative;
+    top: -12px;
+    left: -31px;
+    border-radius: 8px; 
+}
 
 
+.API .text-btn {
+    width: 576px;
+    max-height: 423px;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.API .text-btn .group {
+    width: 576px;
+    height: 212px;
+}
+
+.API .group p {
+    width: 576px;
+    height: 26px;
+}
 
 
+.API .group h2 {
+    width: 576px;
+    height: 162px;
+}
 
 
-
-
-
+.API p {
+    width: 576px;
+    height: 101px;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33.6px;
+    color: #141414;
+}
 
 
 
