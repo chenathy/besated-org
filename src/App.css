@@ -535,7 +535,29 @@
     color: #141414;
 }
 
+.HomePage .CTA {
+    max-width: 1440px;
+    max-height: 348px;
+    margin-top: 160px;
+    padding: 64px 120px 64px 120px;
+    gap: 48px;
+    background-color: #23395B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.CTA h1 {
+    width: 1200px;
+    height: 126px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 63px;
+    text-align: center;
+    color: #FFFFFF;
+}
 
 
 
