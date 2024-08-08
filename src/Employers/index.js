@@ -4,12 +4,12 @@ import Hero from './HeroImage.svg';
 import AttractIcon from './Icon_Attract.svg';
 import LoyaltyIcon from './Icon_Loyalty.svg';
 import Productivity from './Icon_Productivity.svg';
-import HowIcon from './How.svg';
+import HowIcon from './HowIcon.png';
 import Group1 from './Group1.svg';
 import Group2 from './Group2.svg';
 import Group3 from './Group3.svg';
 import Group4 from './Group4.svg';
-import CalloutIcon from './Callout.svg';
+import CalloutIcon from './CalloutIcon.png';
 
 
 const ForEmployers = () => {
