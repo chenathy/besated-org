@@ -25,7 +25,7 @@ const HomePage = () => {
 
                 <img 
                     src={Hero} 
-                    alt='HomePageLogo1'
+                    alt='HomeHero'
                 />
 
             </div>
