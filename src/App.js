@@ -3,18 +3,23 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './NavBar';
 import HomePage from './HomePage';
 import ContactPage from './Contact';
+import Footer from './Footer';
 import './App.css';
 
 const App = () => {
     return (
-        <Router>
-            <NavBar />
-            <Routes>
-                <Route path='/' element={<HomePage />} />
-                <Route path='/about' element={<ContactPage />} />
-                {/* <Route path="/contact" element={<Contact />} /> */} 
-            </Routes>
-        </Router>
+        <div>
+            <Router>
+                <NavBar />
+                <Routes>
+                    <Route path='/' element={<HomePage />} />
+                    <Route path='/about' element={<ContactPage />} />
+                    {/* <Route path="/contact" element={<Contact />} /> */} 
+                </Routes>
+            </Router>
+            <Footer />
+        </div>
+
         // <div>
         //     <div className='container'>
         //         <h1>Hello, Welcome to Bestated LLC</h1>
