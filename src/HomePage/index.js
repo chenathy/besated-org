@@ -127,6 +127,11 @@ const HomePage = () => {
                     <button className='about-btn'>Learn more</button>
                 </div>
             </div>
+
+            <div className='CTA'>
+                <h1>Opt in to accessible, <br/>employer-sponsored wills today!</h1> 
+                <button className='contact-btn'>Get in contact</button>
+            </div>
             
 
         </div>
