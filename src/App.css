@@ -1,39 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap');
 
 
 /* Buttons  */
 .contact-btn {
-    max-width: 147px;
-    max-height: 46px;
+    width: 147px;
+    height: 46px;
     border-radius: 4px;
     padding: 10px 15px 10px 15px;
     gap: 10px;
     background-color: #F1B23E;
-}
-
-.contact-btn a {
-    width: 117px;
-    height: 26px;
     color: #141414;
     font-family: 'Public Sans', sans-serif; 
     font-weight: 400;
     font-size: 18px;
     line-height: 25.2px;
+
 }
 
+
+.contact-btn:hover {
+    width: 156px;
+    height: 50px;
+    padding: 12px 17px 12px 17px;
+    text-decoration: underline;
+    font-weight: 600px;
+}
+
+
+
 .about-btn {
-    max-width: 105px;
-    max-height: 46px;
+    width: 147px;
+    height: 46px;
     border-radius: 4px;
     padding: 10px 15px 10px 15px;
     gap: 10px;
     background-color:  #D5D6D7;
-}
-
-.about-btn a {
-    width: 75px;
-    height: 26px;
     font-family: 'Public Sans', sans-serif; 
     font-weight: 400;
     font-size: 18px;
@@ -42,137 +44,27 @@
 }
 
 
-
-/* NavBar */
-
-.navbar {
-    background-color: #F5F5F5;
-    /* filter: saturate(10%); */
-    /* overflow: hidden; */
-    display: flex;
-    align-items: center; 
-    position: relative;
-    height: 100px;
-    width: 100vw;
-}
-
-.navbar .logo {
-    width: 152.14px;
-    height: 30px; 
-    margin-top: 10px; 
-    margin-left: 120px;
-}
-
-.navbar .ul {
-    position: absolute;
-    top: 27px;
-    left: 661px;
-    max-width: 659px; 
-    max-height: 46px;   
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    align-content: flex-start;
-    gap: 64px;
-}
-
-.navbar .ul ul {
-    list-style-type: none;
-    gap: 20px;
-    padding: 0;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    margin: 0;
-}
-
-.navbar li {
-    display: flex;
-    align-items: center;
-}
-
-.navbar li a {
-    height: 26;
-    width: auto;
-    display: block;
-    color: #23395B;
-    text-align: left; 
-    padding: 14px 20px;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    font-family: 'Public Sans', sans-serif; 
-    font-size: 18px; 
-    font-weight: 600; 
-    line-height: 25.2px;
+.about-btn:hover {
+    width: 156px;
+    height: 50px;
+    padding: 12px 17px 12px 17px;
+    text-decoration: underline;
+    font-weight: 600px;
 }
 
 
 
-/* HomePage */
-.HomePage {
-    width: 1440px;
-    height: 4096px;
-}
-
-.HomePage .Hero {
-    display: flex;
-    justify-content: center;
-    max-width: 1440px;
-    max-height: 628px;
-    width: 100%;
-    top: 100px;
-    /* padding: 100px 120px 100px 120px; */
-    padding-top: 100px;
-    padding-right: 70px;
-    padding-bottom: 100px;
-    gap: 96px;
-    border-color: black;
-    border-width: 1px;
-    border-style: dashed;
-}
-
-.HomePage .Hero .Text-Btn {
-    display: grid;
-    width: 576px;
-    max-height: 471px;
-    gap: 32px;
-}
-
-.Hero .Text-Btn h1 {
-    width: 576px;
-    height: 189px;
-    font-family: 'Bricolage Grotesque'; 
-    font-size: 52px;
-    font-weight: 600;
-    line-height: 63px;
-    text-align: left;
-
-}
-
-.Hero .Text-Btn h4 {
-    width: 576px;
-    height: 118px;
-    font-family: 'Public Sans', sans-serif;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 39.2px;
-    color: #23395B;
-}
-
-.Hero .Text-Btn .btn {
-    display: flex;
-    max-width: 284px;
-    max-height: 46px;
-    gap: 32px;
-}
 
 
-.HomePage .Hero .Pic {
-    width: 528px;
-    height: 428px;
-    border-radius: 8px;
-}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -222,7 +114,7 @@ Form.Control {
 }
 
 
-Button {
+/* Button {
     background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
@@ -231,7 +123,7 @@ Button {
     border-color: black;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 Button:hover {
@@ -240,4 +132,4 @@ Button:hover {
 
 Button[type='submit'] {
     width: 50%;
-}
+} */

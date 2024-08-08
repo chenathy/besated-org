@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import logo from './bestated.ai.svg';
-import '../App.css';
+import './NavBar.css';
 
 const NavBar = () => {
     const navigate = useNavigate();
