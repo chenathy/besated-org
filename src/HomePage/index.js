@@ -1,7 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import './Home.css';
 import Hero from './HeroImage.svg';
-import arrow from './noun-arrow.svg';
+import Arrow from './noun-arrow.svg';
 import Wills from './WillsImage.svg';
 import Beneficiary from './BeneficiaryImage.svg'
 
@@ -87,7 +88,7 @@ const HomePage = () => {
                 </div>
 
                 <img 
-                    src={arrow} 
+                    src={Arrow} 
                     alt='Arrow' 
                     className='box pic'
                 />
