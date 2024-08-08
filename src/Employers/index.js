@@ -4,7 +4,11 @@ import Hero from './HeroImage.svg';
 import AttractIcon from './Icon_Attract.svg';
 import LoyaltyIcon from './Icon_Loyalty.svg';
 import Productivity from './Icon_Productivity.svg';
-
+import Mask from './Mask.svg';
+import Group1 from './Group1.svg';
+import Group2 from './Group2.svg';
+import Group3 from './Group3.svg';
+import Group4 from './Group4.svg';
 
 
 const ForEmployers = () => {
@@ -73,8 +77,66 @@ const ForEmployers = () => {
                     
                     
                 </div>
-
             </div>
+
+            <hr/>
+
+            <div className='How'>
+                <div className='intro'>
+                    <h2>How employer-sponsored wills work</h2>
+                    <p>
+                        Bestated is a two-sided marketplace utilizing generative AI and Large Language Models (LLMs) to draft estate planning documents 
+                        such as wills, power of attorney, and medical directives that then get sent to our attorney partners for final touches and notarization. 
+                        <br/> <br/>
+                        <span>Let’s get started &gt;</span>
+                    </p>
+                </div>
+
+                <div className='secondary'>
+                    <img
+                        src={Mask}
+                        alt='Mask'
+                    />
+                    <div className='steps'>
+                        <h3>Here’s how it works:</h3>
+                        <div className='step'>
+                            <img
+                                src={Group1}
+                                alt='Group1'
+                            />
+                            <p>During their onboarding, your employee fills out a Bestated intake form.</p>
+                        </div>
+                        <div className='step'>
+                            <img
+                                src={Group2}
+                                alt='Group2'
+                            />
+                            <p>
+                                Using this form, our team utilizes state-of-the-art generative AI and Large Language Models (LLMs) 
+                                to create drafts of their documents: wills, POAs, and medical directives.
+                            </p>
+                        </div>
+                        <div className='step'>
+                            <img
+                                src={Group3}
+                                alt='Group3'
+                            />
+                            <p>We then send the documents to a Bestated attorney partner in your employee’s state.</p>
+                        </div>
+                        <div className='step'>
+                            <img
+                                src={Group4}
+                                alt='Group4'
+                            />
+                            <p>
+                                Our attorney finalizes and notarizes it, Bestated signs off, 
+                                and copies are sent out to employees and their beneficiaries.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     )
 };
