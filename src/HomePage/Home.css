@@ -291,7 +291,6 @@
     width: 480px;
     max-height: 457px;
     gap: 32px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -339,6 +338,11 @@
     font-size: 24px;
     line-height: 33.6px;
     color: #FFFFFF;
+}
+
+
+.callout-box button {
+    height: 50px;
 }
 
 .callout-box img {
@@ -443,4 +447,8 @@
     line-height: 63px;
     text-align: center;
     color: #FFFFFF;
+}
+
+.CTA .btn {
+    height: 50px;
 }
