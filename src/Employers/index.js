@@ -4,11 +4,12 @@ import Hero from './HeroImage.svg';
 import AttractIcon from './Icon_Attract.svg';
 import LoyaltyIcon from './Icon_Loyalty.svg';
 import Productivity from './Icon_Productivity.svg';
-import Mask from './Mask.svg';
+import HowIcon from './How.svg';
 import Group1 from './Group1.svg';
 import Group2 from './Group2.svg';
 import Group3 from './Group3.svg';
 import Group4 from './Group4.svg';
+import CalloutIcon from './Callout.svg';
 
 
 const ForEmployers = () => {
@@ -94,8 +95,8 @@ const ForEmployers = () => {
 
                 <div className='secondary'>
                     <img
-                        src={Mask}
-                        alt='Mask'
+                        src={HowIcon}
+                        alt='HowIcon'
                     />
                     <div className='steps'>
                         <h3>Here’s how it works:</h3>
@@ -136,6 +137,22 @@ const ForEmployers = () => {
                     </div>
                 </div>
             </div>
+
+            <div className='callout-box'>
+                    <div className='text-btn'>
+                        <div className='group'>
+                            <p>FOR INDIVIDUALS</p>
+                            <h2>Not an employer, but interested in employer-sponsored wills?</h2>
+                        </div>
+                        <p>Whether you want to pay for this benefit yourself or have your employer add it, we’re here to help!</p>
+                        <button className='contact-btn'>Reach out</button>
+                    </div>
+                    
+                    <img 
+                        src={CalloutIcon} 
+                        alt='CalloutIcon'
+                    />
+                </div>
 
         </div>
     )

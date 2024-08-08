@@ -114,8 +114,83 @@
 
 
 
+/* Callout Box  */
+.callout-box {
+    max-width: 1200px;
+    border-radius: 8px;
+    padding: 64px;
+    gap: 64px;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: 0;
+    left: 0px;
+    display: flex;
+}
 
 
+.callout-box .text-btn {
+    width: 480px;
+    max-height: 477px;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.callout-box .text-btn .group {
+    width: 480px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    
+}
+
+.callout-box .text-btn .group p {
+    width: 335.79px;
+    height: 26px;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25.2px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.callout-box .text-btn .group h2 {
+    width: 480px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    color: #FFFFFF;
+}
+
+
+.callout-box .text-btn p{
+    width: 480px;
+    height: 135px;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33.6px;
+    color: #FFFFFF;
+}
+
+
+.callout-box button {
+    height: 50px;
+}
+
+.callout-box img {
+    width: 528px;
+    height: 427px;
+    position: relative;
+    top: 20px;
+    left: 12px;
+    border-radius: 8px;
+}
 
 
 

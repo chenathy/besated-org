@@ -34,7 +34,6 @@
     gap: 96px;
     display: flex;
     flex-direction: column;
-    border: 1px dashed black;
 }
 
 
@@ -44,8 +43,6 @@
     gap: 48px;
     display: flex;
     justify-content: space-between;
-
-    border: black 1px dashed;
 }
 
 .Benefits .benefits .benefit {
@@ -59,8 +56,6 @@
     background-color: #FFFFFF;
     box-shadow: 0px 4px 4px -4px #0C0C0D0D;
     box-shadow: 0px 16px 32px -4px #0C0C0D1A;
-
-    border: blue 1px dashed;
 }
 
 .benefit img {
@@ -74,8 +69,6 @@
     max-height: 202px;
     gap: 16px;
     display: grid;
-
-    border: blue 1px dashed;
 }
 
 
@@ -111,12 +104,11 @@
 
 .How .intro {
     width: 1000px;
+    margin-left: 120px;
     max-height: 270px;
     gap: 48px;
     display: grid;
     justify-content: space-between;
-
-    border: black 1px dashed;
 }
 
 
@@ -141,8 +133,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    border: black 1px dashed;
 }
 
 .secondary img {
@@ -155,7 +145,6 @@
     max-height: 397px;
     gap: 32px;
     display: grid;
-    border: black 1px dashed;
 }
 
 .steps h3 {
@@ -173,8 +162,6 @@
     max-height: 76px;
     gap: 24px;
     display: flex;
-
-    border: blue 1px dashed;
 }
 
 .steps .step img {
@@ -189,5 +176,21 @@
     font-weight: 400;
     line-height: 25.2px;
     color: #141414;
+    text-align: left;
+}
+
+
+.Employers .callout-box {
+    max-height: 605px;
+    background-color: #A13D63;
+    margin-bottom: 160px;
+}
+
+.Employers .callout-box .text-btn .group {
+    height: 266px;
+}
+
+.Employers .callout-box h2 {
+    height: 216px;
     text-align: left;
 }
