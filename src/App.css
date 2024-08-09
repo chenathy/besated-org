@@ -232,6 +232,8 @@
     display: grid;
     justify-content: center;
     align-items: center;
+
+    border: 1px black dashed;
 }
 
 .How .intro {
@@ -254,6 +256,7 @@
 
 
 .How .intro p {
+    width: 1000px;
     font-family: 'Public Sans', sans-serif;
     font-weight: 400;
     text-align: left;
