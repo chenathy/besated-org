@@ -12,10 +12,7 @@ const About = () => {
         <div className='About'>
             
             <div className='Story'>
-                {/* <img
-                    src={StoryIcon}
-                    alt='About'
-                /> */}
+
 
                 <div className='text-btn'>
                     <h1>The Bestated Story</h1>
@@ -36,7 +33,7 @@ const About = () => {
                     </p>
 
                     <button className='contact-btn'>Learn more</button>
-                </div>
+                </div> 
             </div>
 
 
