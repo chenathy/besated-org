@@ -5,7 +5,7 @@ import HomePage from './HomePage';
 import ForEmployers from './Employers';
 import ForAttorneys from './Attorneys';
 import ForFinancialAdvisors from './FinancialAdvisor';
-import ContactPage from './Contact';
+import Contact from './Contact';
 import Footer from './Footer';
 import './App.css';
 
@@ -19,8 +19,7 @@ const App = () => {
                     <Route path='/employers' element={<ForEmployers/>} />
                     {/* <Route path='/professional' element={<ForAttorneys/>} /> */}
                     <Route path='/professional' element={<ForFinancialAdvisors/>} />
-                    <Route path='/about' element={<ContactPage />} />
-                    {/* <Route path="/contact" element={<Contact />} /> */} 
+                    <Route path="/contact" element={<Contact />} /> 
                 </Routes>
             </Router>
             <Footer />

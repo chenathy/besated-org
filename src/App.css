@@ -53,6 +53,28 @@
 }
 
 
+.submit-btn {
+    width: 171px;
+    max-height: 46px;
+    border-radius: 4px;
+    padding: 10px 15px 10px 15px;
+    gap: 10px;
+    background-color: #F1B23E;
+    color: #141414;
+    font-family: 'Public Sans', sans-serif; 
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25.2px;
+}
+
+
+.submit-btn:hover {
+    width: 180px;
+    height: 50px;
+    padding: 12px 17px 12px 17px;
+    text-decoration: underline;
+    font-weight: 600px;
+}
 
 
 /* Hero */
@@ -64,9 +86,7 @@
     top: 100px;
     padding: 100px 120px 100px 120px;
     gap: 96px;
-    border-color: black;
-    border-width: 1px;
-    border-style: dashed;
+
 }
 
 .Hero .text-btn {
@@ -74,11 +94,12 @@
     width: 576px;
     max-height: 471px;
     gap: 32px;
+    font-weight: 400;
 }
 
 .Hero .text-btn h1 {
     width: 576px;
-    height: 189px;
+    max-height: 189px;
     font-family: 'Bricolage Grotesque'; 
     font-size: 54px;
     font-weight: 600;
@@ -89,12 +110,26 @@
 
 .Hero .text-btn h4 {
     width: 576px;
-    height: 118px;
+    max-height: 118px;
     font-family: 'Public Sans', sans-serif;
     font-weight: 400;
     font-size: 28px;
     line-height: 39.2px;
     color: #23395B;
+}
+
+.Hero .text-btn p {
+    font-family: 'Public Sans';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33.6px;
+    text-align: left;
+    color: #23395B;
+}
+
+.Hero .text-btn span {
+    font-weight: 600;
+    text-decoration: underline;
 }
 
 .Hero .text-btn .btn {
@@ -413,72 +448,3 @@
 }
 
 
-
-
-
-
-
-
-
-.container {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    /* height: 100vh;  */
-}
-  
-.content {
-    text-align: center; 
-    max-width: 700px; 
-    padding: 60px;
-}
-
-.icon-layout {
-    margin: 20px;
-    width: 40px;
-    height: 40px;
-}
-
-.content .form {
-    display: flex;
-}
-
-.form .form-group {
-    flex: 1;
-    margin-bottom: 15px;
-}
-
-Form.ControlLabel {
-    display: block;
-    margin-bottom: 5px; 
-  }
-
-Form.Control {
-    width: 100%;
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-
-/* Button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: 1px;
-    border-width: 1px;
-    border-color: black;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-Button:hover {
-    background-color: #45a049;
-}
-
-Button[type='submit'] {
-    width: 50%;
-} */
