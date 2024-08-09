@@ -19,10 +19,18 @@
     max-height: 1630px;
     border-radius: 8px;
     padding: 64px;
-    gap: 48px;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px -4px #0C0C0D0D;
     box-shadow: 0px 16px 32px -4px #0C0C0D1A;
+}
+
+.form-form {
+    display: grid;
+    gap: 48px;
+}
+
+.form-group {
+    width: 400px;
 }
 
 .form-group p {
@@ -33,6 +41,7 @@
     line-height: 25.2px;
     text-align: left;
 }
+
 
 #req {
     color: #A13D63;

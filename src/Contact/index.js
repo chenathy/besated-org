@@ -108,6 +108,7 @@ const Contact = () => {
                     
                     <Form
                         fluid
+                        className='form-form'
                         // formValue={formValue} 
                         // onChange={handleChange} 
                         // onSubmit={handleSubmit}
@@ -195,7 +196,6 @@ const Contact = () => {
                                 data={usStates}
                                 placeholder='Choose state'
                                 required
-                                style={{ width: 300 }}
                             />
                         </Form.Group>
 
@@ -207,7 +207,6 @@ const Contact = () => {
                                 rows={5}
                                 placeholder='Shoot us a message!'
                                 required
-                                style={{ width: 300 }}
                             />
                         </Form.Group>
 
