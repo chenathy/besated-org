@@ -1,0 +1,8 @@
+.Attorneys {
+    width: 1440px;
+    background-color: #F5F5F5;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
