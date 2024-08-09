@@ -122,6 +122,14 @@ const ForAttorneys = () => {
                 </div>
 
             </div>
+
+            <div className='CTA'>
+                <h1>Ready to join Bestated<br/>and expand your business?</h1> 
+                <div className='btn'>
+                    <button className='contact-btn'>Get in contact</button>
+                </div>
+            </div>
+
         </div>
     )
 
