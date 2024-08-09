@@ -1,0 +1,28 @@
+.Contact {
+    width: 1440px;
+    background-color: #F5F5F5;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.Contact .Form-section {
+    height: 1855px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.Contact .Form-section .form {
+    width: 627px;
+    height: 1630px;
+    border-radius: 8px;
+    padding: 64px;
+    gap: 48px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px -4px #0C0C0D0D;
+    box-shadow: 0px 16px 32px -4px #0C0C0D1A;
+    
+    
+    border: 1px black dashed;
+}

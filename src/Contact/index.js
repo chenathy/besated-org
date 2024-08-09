@@ -1,170 +1,104 @@
 import React, { useState } from 'react';
-import { Form, ButtonToolbar, Button, Schema, Message } from 'rsuite'; 
-import { IoMdContact } from "react-icons/io";
-import { MdBusinessCenter } from "react-icons/md";
-import { MdEmail } from "react-icons/md";
-import { MdPhone } from "react-icons/md";
-import { MdLocationPin } from "react-icons/md";
-import { MdNaturePeople } from "react-icons/md";
-import { FaSackDollar } from "react-icons/fa6";
+import { Form, FormControl, RadioGroup, Radio } from 'rsuite'; 
 import 'rsuite/dist/rsuite.min.css';
-import '../App.css'
-import familyLogo from './bestated_family.jpg'
-import NotificationMessage from '../Notification';
+import '../App.css';
+import './Contact.css';
+import Hero from './Hero.png';
 
 
-const ContactPage = () =>{
+const Contact = () => {
 
-    const [message, setMessage] = useState('');
-    const [messageType, setMessageType] = useState('info');
 
-    const [formValue, setFormValue] = useState({
-        firstName: '',
-        lastName: '',
-        companyName: '',
-        email: '',
-        phone: '',
-        state: '',
-        beneficiaries: '',
-        assets: ''
-    })
-
-    const handleChange = (value) => {
-        setFormValue(value);
-    }
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        console.log(`formValue: ${JSON.stringify( formValue )}`);
-        // try {
-        //     const response = await fetch(
-        //         'https://chenanthy-backend-server.com/api/', 
-        //         {
-        //             method: 'POST', 
-        //             headers: {'Content-Type': 'application/json'},
-        //             body: JSON.stringify(formValue)
-        //         }
-        //     );
-            
-        //     if (!response.ok) {
-        //         throw new Error('API was not being sent POST successfullu')
-        //     }
-
-        //     const data = await response.json();
-        //     console.log('Success: ', data);
-
-        // } catch (error) {
-        //     console.log('Error:', error);
-        // }
-    
-        setMessage('Your Info Submitted Successfully!');
-        setMessageType('success');
-    } 
+    const clientTypeOptions = [
+        {label: 'An employer interested in employer-sponsored wills', value: 'employer'},
+        {label: 'An attorney interested in becoming a Bestated partner', value: 'attorney'},
+        {label: 'A financial advisor interested in the beneficiary API', value: 'financialAdvisor'},
+        {label: 'An individual looking for more information', value: 'individual'},
+        {label: 'Other', value: 'other'}
+    ] 
 
     return (
-        <div className='container'>
+        <div className='Contact'>
 
-            <div className='content'>
-
-            <img
-                src={familyLogo}
-                alt="Bestated Family"
-                style={{ maxWidth: '60%', height: 'auto' }} 
-            />
-
-            <br/>
-
-            <h4>Leave your information our team will reach out to you soon</h4>
-
-            <br/>
-
-            <Form fluid
-                formValue={formValue} 
-                onChange={handleChange} 
-                onSubmit={handleSubmit}
-            >
-                <div className='form'>
-                    <IoMdContact className='icon-layout'/>
-                    <div style={{ display: 'flex', flexGrow: 1 }}>
-                        <Form.Group className='form-group'>
-                            <Form.ControlLabel htmlFor='firstName'>First Name *</Form.ControlLabel>
-                            <Form.Control name='firstName' id='firstName' type='text' required />
-                        </Form.Group>
-
-                        <Form.Group className='form-group' style={{ marginLeft: '40px' }}>
-                            <Form.ControlLabel htmlFor='lastName'>Last Name *</Form.ControlLabel>
-                            <Form.Control name='lastName' id='lastName' type='text' required />
-                        </Form.Group>
+            <div className='Hero'>
+                <div className='text-btn'>
+                    <h1>Get in contact!</h1>
+                    <p>
+                        Tell us a little bit about yourself and who you are. A member of our team will be in contact with you shortly! 
+                        If you’d like to reach us directly, you can do so at <span>hello@bestated.ai</span>.
+                    </p>
+                    <div className='btn'>
+                        <button className='contact-btn'>Get in contact</button>
                     </div>
                 </div>
-                
-                <div className='form'>
-                    <MdBusinessCenter className='icon-layout'/>
-                    <Form.Group className='form-group'>
-                        <Form.ControlLabel htmlFor='companyName'>Company Name *</Form.ControlLabel>
-                        <Form.Control name='companyName' id='companyName' type='text' required />
-                    </Form.Group>
-                </div>
 
-                <div className='form'>
-                    <MdEmail className='icon-layout'/>
-                    <Form.Group className='form-group'>
-                        <Form.ControlLabel htmlFor='email'>Email *</Form.ControlLabel>
-                        <Form.Control name='email' id='email' type='email' required />
-                    </Form.Group>
-                </div>
+                <img 
+                    src={Hero} 
+                    alt='HomeHero'
+                />
 
-                <div className='form'>
-                    <MdPhone className='icon-layout'/>
-                    <Form.Group className='form-group'>
-                        <Form.ControlLabel htmlFor='phone'>Phone *</Form.ControlLabel>
-                        <Form.Control name='phone' id='phone' type='text' required/>
-                    </Form.Group>
-                </div>
-                
-                <div className='form'>
-                    <MdLocationPin className='icon-layout'/>
-                    <Form.Group className='form-group'>
-                        <Form.ControlLabel htmlFor='state'>State *</Form.ControlLabel>
-                        <Form.Control name='state' id='state' type='text' required />
-                    </Form.Group>
-                </div>
-                    
-                <div className='form'>
-                    <MdNaturePeople className='icon-layout'/>
-                    <Form.Group className='form-group'>
-                        <Form.ControlLabel htmlFor='beneficiaries'>Beneficiaries</Form.ControlLabel>
-                        <Form.Control name='beneficiaries' id='beneficiaries' type='text' />
-                    </Form.Group>
-                </div>
-
-                <div className='form'>
-                    <FaSackDollar className='icon-layout'/>
-                    <Form.Group className='form-group'>
-                        <Form.ControlLabel htmlFor='assets'>Assets</Form.ControlLabel>
-                        <Form.Control name='assets' id='assets' type='text' />
-                    </Form.Group>
-                </div>
-
-                <div className='form'>
-                    <Form.Group className='form-group'>
-                        <Button 
-                            appearance="primary" 
-                            type='submit'
-                            onClick={handleSubmit}
-                        >Submit</Button>
-                    </Form.Group>
-                </div>
-                {message && (
-                    <NotificationMessage 
-                        response={messageType}
-                        message={message}
-                    />
-                )}
-            </Form>
             </div>
+
+            <div className='Form-section'>
+                <div className='form'>
+                    
+                    <Form
+                        fluid
+                        // formValue={formValue} 
+                        // onChange={handleChange} 
+                        // onSubmit={handleSubmit}
+                    >
+                        <Form.Group className='form-group'>
+                            <Form.ControlLabel htmlFor='name'>Name *</Form.ControlLabel>
+                            <Form.Control 
+                                name='clientName' 
+                                id='clientName'
+                                type='text' 
+                                required 
+                            />
+                        </Form.Group>
+
+                        <Form.Group>
+                            <Form.ControlLabel>Who are you ? *</Form.ControlLabel>
+                            <RadioGroup name='type'>
+                                {clientTypeOptions.map(option => (
+                                    <Radio
+                                        key={option.value}
+                                        value={option.value}
+                                    >
+                                        {option.label}
+                                    </Radio>
+                                ))}
+
+                            </RadioGroup>
+                        </Form.Group>
+
+                        {/* <FormGroup>
+                            <Select name="selectedOption" label="Select an option">
+                            {clientTypeOptions.map((option) => (
+                                <Option 
+                                    key={option.value} 
+                                    value={option.value}
+                                >
+                                    {option.label}
+                                </Option>
+                            ))}
+                            </Select>
+                        </FormGroup> */}
+                        
+
+                        <button className='submit-btn'>Submit Message</button>
+
+                    </Form>
+                </div>
+            
+
+
+
+            </div>
+
         </div>
     )
 };
 
-export default ContactPage;
+export default Contact;
