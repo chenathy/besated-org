@@ -96,90 +96,20 @@
 .Employers .How {
     max-height: 1143px;
     padding: 160px 120px 160px 120px;
-    gap: 96px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
 }
 
-.How .intro {
-    width: 1000px;
-    margin-left: 120px;
+.Employers .How .intro {
     max-height: 270px;
-    gap: 48px;
-    display: grid;
-    justify-content: space-between;
 }
 
-
-.intro p {
-    font-family: 'Public Sans', sans-serif;
+.Employers .How .intro p {
     font-size: 24px;
-    font-weight: 400;
     line-height: 33.6px;
-    text-align: left;
 }
 
-.intro p span {
+.Employers .How .intro p span {
     font-weight: 700;
-    text-decoration: underline;
-    cursor: pointer;
 }
-
-.secondary {
-    width: 1200px;
-    max-height: 457px;
-    gap: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.secondary img {
-    width: 528px;
-    height: 457px;
-    border-radius: 8px;
-}
-
-.secondary .steps{
-    width: 576px;
-    max-height: 397px;
-    gap: 32px;
-    display: grid;
-}
-
-.steps h3 {
-    height: 40px;
-    font-family: 'Public Sans', sans-serif; 
-    font-size: 28px;
-    font-weight: 600;
-    line-height: 39.2px;
-    color: #23395B;
-    text-align: left;
-}
-
-.steps .step {
-    width: 576px;
-    max-height: 76px;
-    gap: 24px;
-    display: flex;
-}
-
-.steps .step img {
-    width: 40px;
-    height: 40px;
-}
-
-.steps .step p {
-    width: 518px;
-    font-family: 'Public Sans', sans-serif; 
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 25.2px;
-    color: #141414;
-    text-align: left;
-}
-
 
 .Employers .callout-box {
     max-height: 605px;
