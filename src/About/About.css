@@ -1,0 +1,32 @@
+.About {
+    width: 1440px;
+}
+
+.About .Story {
+    width: 1440px;
+    height: 765px;
+
+    display: grid;
+    justify-content: center;
+}
+
+.Story img {
+    width: auto;
+    height: 100%;
+}
+
+
+.Story .text-btn {
+    max-width: 1128px;
+    max-height: 705px;
+    position: relative;
+    top: 120px;
+    border-radius: 8px;
+    padding: 64px;
+    gap: 32px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px -4px #0C0C0D0D;
+    box-shadow: 0px 16px 32px -4px #0C0C0D1A;
+
+    margin: 120px;
+}
