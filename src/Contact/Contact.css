@@ -7,7 +7,7 @@
 }
 
 .Contact .Form-section {
-    max-height: 1855px;
+    /* max-height: 1855px; */
     display: grid;
     align-items: center;
     justify-content: center;
@@ -16,7 +16,7 @@
 
 .Contact .Form-section .form {
     width: 627px;
-    max-height: 1630px;
+    /* max-height: 1630px; */
     border-radius: 8px;
     padding: 64px;
     background: #FFFFFF;
@@ -33,7 +33,7 @@
     width: 400px;
 }
 
-.form-group p {
+.form-group p, span {
     height: 26px;
     font-family: 'Public Sans', sans-serif;
     font-size: 18px;
