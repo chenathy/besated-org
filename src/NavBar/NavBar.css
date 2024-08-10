@@ -52,7 +52,7 @@
     align-items: center;
 }
 
-.navbar li a, span {
+.navbar li a, .navbar li span {
     height: 26;
     width: auto;
     display: block;
