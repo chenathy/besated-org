@@ -26,11 +26,25 @@
 
 .form-form {
     display: grid;
-    gap: 48px;
+    gap: 36px;
 }
 
 .form-group {
-    width: 400px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group .rs-form-control-label {
+    margin-bottom: 12px;
+}
+
+.form-group .radio {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
 }
 
 .form-group p, span {
@@ -42,6 +56,10 @@
     text-align: left;
 }
 
+.form-group Form {
+    gap: 12px;
+}
+
 
 #req {
     color: #A13D63;
@@ -51,3 +69,7 @@
 #optional {
     font-weight: 400;
 }
+
+
+
+

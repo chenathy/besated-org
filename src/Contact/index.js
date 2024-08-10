@@ -119,6 +119,7 @@ const Contact = () => {
                                 name='contactName' 
                                 id='contactName'
                                 type='text' 
+                                placeholder='Enter your full name'
                                 required 
                             />
                         </Form.Group>
@@ -130,6 +131,7 @@ const Contact = () => {
                                     <Radio
                                         key={option.value}
                                         value={option.value}
+                                         className='radio'
                                     >
                                         {option.label}
                                     </Radio>
@@ -145,6 +147,7 @@ const Contact = () => {
                                 id='companyName'
                                 type='text' 
                                 required 
+                                placeholder='Enter your company name'
                             />
                         </Form.Group>
 
@@ -156,6 +159,7 @@ const Contact = () => {
                                     <Radio
                                         key={option.value}
                                         value={option.value}
+                                         className='radio'
                                     >
                                         {option.label}
                                     </Radio>
