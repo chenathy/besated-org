@@ -27,14 +27,13 @@
 
 .Numbers {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     justify-items: center;
     max-height: 236px;
     max-width: 1440px;
     top: 728px;
     padding: 32px 318px 32px 318px;
-    padding-left: 120px;
     gap: 160px ;
 
     border-color: black;

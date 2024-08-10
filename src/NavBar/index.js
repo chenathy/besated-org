@@ -1,41 +1,58 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import logo from './bestated.ai.svg';
 import './NavBar.css';
 
 const NavBar = () => {
-    const navigate = useNavigate();
 
-    const handleClickContact = () => {
-        navigate('/contact');
-    };
+    const navigate = useNavigate();
+    const [dropdownOpen, setDropdownOpen] = useState(false);
 
     return (
-        <nav className='navbar'>
-            <Link to = '/'>
-                <img 
-                    src={logo} 
-                    alt='BestatedLogo' 
-                    className='logo' 
-                />
-            </Link>
-            <div className='ul'>
-                <ul>
-                    <li><Link to='/employers'>For employers</Link></li>
-                    <li><Link to='/professional'>For professional</Link></li>
-                    <li><Link to='/about'>About</Link></li>
-                    <li>
-                        <button
-                            onClick={handleClickContact}
-                            className='contact-btn'
-                        >
-                            Get in contact
-                        </button>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <div className='navbar-container'>
+
+            <nav className='navbar'>
+                <Link to = '/'>
+                    <img 
+                        src={logo} 
+                        alt='BestatedLogo' 
+                        className='logo' 
+                    />
+                </Link>
+                <div className='ul'>
+                    <ul>
+                        <li><Link to='/employers'>For employers</Link></li>
+
+                        <li className='nav-links'>
+                            <div onClick={() => setDropdownOpen(!dropdownOpen)}>
+                                <span>For professionals</span>
+                            </div>
+                        </li>
+
+                        <li><Link to='/about'>About</Link></li>
+
+                        <li>
+                            <button
+                                onClick={() => navigate('/contact')}
+                                className='contact-btn'
+                            >
+                                Get in contact
+                            </button>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+
+            {dropdownOpen && (
+                <div className='navbar ul dropdown'>
+                    <li onClick={() => setDropdownOpen(false)}><Link to='/professional-attorneys'><p>For Attorneys &gt;</p></Link></li>
+                    <li onClick={() => setDropdownOpen(false)}><Link to='/professional-financialAdvisors'><p>For financial advisors &gt;</p></Link></li>
+                </div>
+            )}
+
+        </div>
     );
 };
 
