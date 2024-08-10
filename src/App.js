@@ -6,6 +6,7 @@ import ForEmployers from './Employers';
 import ForAttorneys from './Attorneys';
 import ForFinancialAdvisors from './FinancialAdvisor';
 import Contact from './Contact';
+import About from './About';
 import Footer from './Footer';
 import './App.css';
 
@@ -19,6 +20,7 @@ const App = () => {
                     <Route path='/employers' element={<ForEmployers/>} />
                     <Route path='/professional-attorneys' element={<ForAttorneys/>} />
                     <Route path='/professional-financialAdvisors' element={<ForFinancialAdvisors/>} />
+                    <Route path='/about' element={<About />} />
                     <Route path="/contact" element={<Contact />} /> 
                 </Routes>
             </Router>
