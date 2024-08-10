@@ -132,7 +132,6 @@ const Contact = () => {
                                     <Radio
                                         key={option.value}
                                         value={option.value}
-                                         className='radio'
                                     >
                                         {option.label}
                                     </Radio>
