@@ -7,7 +7,7 @@
 .About hr {
     width: 1200px;
     margin-left: 120px;
-    border: 2px solid #4BBEDB;
+    border: 1.5px solid #4BBEDB;
 }
 
 .Story {
@@ -18,36 +18,27 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    background-image: url('https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    border: 1px black dashed;
 }
-/* 
+
 .Story img {
-    width: auto;
-    height: 100%;
-} */
+    width: 1440px;
+    height: 765px;
+    background-size: cover;
+}
 
 
 .About .Story .text-btn {
     max-width: 1128px;
     max-height: 705px;
     display: grid;
-    position: relative;
-    top: 120px; 
-    /* margin-top: 120px; */
+    position: absolute;
+    top: 220px; 
     border-radius: 8px;
     padding: 64px;
     gap: 32px;
     background-color: #FFFFFF;
     box-shadow: 0px 4px 4px -4px #0C0C0D0D;
     box-shadow: 0px 16px 32px -4px #0C0C0D1A;
-
-    border: 1px black dashed;
 
 }
 
@@ -85,8 +76,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    border: 1px black dashed;
 }
 
 .About .Usage .text-btn {

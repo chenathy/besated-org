@@ -13,6 +13,10 @@ const About = () => {
             
             <div className='Story'>
 
+                <img
+                    src={StoryIcon}
+                    alt='StoryIcon'
+                />
 
                 <div className='text-btn'>
                     <h1>The Bestated Story</h1>
