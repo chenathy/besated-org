@@ -27,13 +27,6 @@ const App = () => {
                 <Footer />
             </Router>
         </div>
-
-        // <div>
-        //     <div className='container'>
-        //         <h1>Hello, Welcome to Bestated LLC</h1>
-        //     </div>
-        //     <ContactPage/>
-        // </div>
     );
 };
 
