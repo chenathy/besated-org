@@ -79,7 +79,13 @@ const Contact = () => {
         { label: 'Wyoming', value: 'WY' },
         { label: 'Oversea', value: 'oversea'}
     ];
-      
+    
+    const handleContactClick = () => {
+        const ref = document.getElementById('form')
+        if (ref) {
+            ref.scrollIntoView({ behavior: 'smooth' })
+        }
+    }
 
 
     return (
@@ -93,7 +99,12 @@ const Contact = () => {
                         If you’d like to reach us directly, you can do so at <span>hello@bestated.ai</span>.
                     </p>
                     <div className='btn'>
-                        <button className='contact-btn'>Get in contact</button>
+                        <button 
+                            className='contact-btn'
+                            onClick={handleContactClick}
+                        >
+                            Get in contact
+                        </button>
                     </div>
                 </div>
 
@@ -105,7 +116,7 @@ const Contact = () => {
             </div>
 
             <div className='Form-section'>
-                <div className='form'>
+                <div className='form' id='form'>
                     
                     <Form
                         fluid
