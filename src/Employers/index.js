@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Employers.css';
 import Hero from './HeroImage.svg';
 import AttractIcon from './Icon_Attract.svg';
@@ -13,6 +14,14 @@ import CalloutIcon from './CalloutIcon.png';
 
 
 const ForEmployers = () => {
+
+    const navigate = useNavigate();
+    const handlePageNavigation= (page) => {
+        const pagePrefix = `/${page}`
+        navigate(pagePrefix);
+        window.scrollTo(0, 0);
+    }
+
     return(
         <div className='Employers'>
             <div className='Hero'>
@@ -20,7 +29,11 @@ const ForEmployers = () => {
                     <h1>Protect your employees if the worst comes to be.</h1>
                     <h4>With Bestated, add employer-sponsored wills to your benefits package.</h4>
                     <div className='btn'>
-                        <button className='contact-btn'>Get in contact</button>
+                        <button 
+                            className='contact-btn'
+                            onClick={() => handlePageNavigation('contact')}
+                        >Get in contact
+                        </button>
                     </div>
                 </div>
 
@@ -89,7 +102,10 @@ const ForEmployers = () => {
                         Bestated is a two-sided marketplace utilizing generative AI and Large Language Models (LLMs) to draft estate planning documents 
                         such as wills, power of attorney, and medical directives that then get sent to our attorney partners for final touches and notarization. 
                         <br/> <br/>
-                        <span>Let’s get started &gt;</span>
+                        <span 
+                            onClick={() => handlePageNavigation('contact')}
+                        >Let’s get started &gt;
+                        </span>
                     </p>
                 </div>
 
@@ -145,7 +161,11 @@ const ForEmployers = () => {
                         <h2>Not an employer, but interested in employer-sponsored wills?</h2>
                     </div>
                     <p>Whether you want to pay for this benefit yourself or have your employer add it, we’re here to help!</p>
-                    <button className='contact-btn'>Reach out</button>
+                    <button 
+                        className='contact-btn'
+                        onClick={() => handlePageNavigation('contact')}
+                    >Reach out
+                    </button>
                 </div>
                 
                 <img 
@@ -157,7 +177,11 @@ const ForEmployers = () => {
             <div className='CTA'>
                 <h1>Opt in to accessible, <br/>employer-sponsored wills today!</h1> 
                 <div className='btn'>
-                    <button className='contact-btn'>Get in contact</button>
+                    <button 
+                        className='contact-btn'
+                        onClick={() => handlePageNavigation('contact')}
+                    >Get in contact
+                    </button>
                 </div>
             </div>
         </div>

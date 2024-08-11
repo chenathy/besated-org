@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './About.css';
 import StoryIcon from './Story.png';
 import JamesIcon from './James.png';
@@ -8,6 +9,14 @@ import Nisha from './Nisha.png';
 
 
 const About = () => {
+
+    const navigate = useNavigate();
+    const handlePageNavigation= (page) => {
+        const pagePrefix = `/${page}`
+        navigate(pagePrefix);
+        window.scrollTo(0, 0);
+    }
+
     return (
         <div className='About'>
             
@@ -36,7 +45,12 @@ const About = () => {
                         <span>Harnessing the power of cutting-edge generative AI and Large Language Model (LLM) technologies, the idea for Bestated was born.</span>
                     </p>
 
-                    <button className='contact-btn'>Learn more</button>
+                    <button 
+                        className='contact-btn'
+                        onClick={() => handlePageNavigation('employers')}
+                    >
+                        Learn more
+                    </button>
                 </div> 
             </div>
 
@@ -60,7 +74,12 @@ const About = () => {
                         We make estate planning more accessible by having employers offer our plans to their employees. 
                         We lower costs by using generative AI and Large Language Models (LLMs) to draft legal documents, involving our attorney partners only to verify accuracy.
                     </p>
-                    <button className='contact-btn'>Learn more</button>
+                    <button 
+                        className='contact-btn'
+                        onClick={() => handlePageNavigation('employers')}
+                    >
+                        Learn more
+                    </button>
                 </div>
             </div>  
             
@@ -117,7 +136,12 @@ const About = () => {
             <div className='CTA'>
                 <h1>Ready to explore Bestated?</h1> 
                 <div className='btn'>
-                    <button className='contact-btn'>Get in contact</button>
+                    <button 
+                        className='contact-btn'
+                        onClick={() => handlePageNavigation('contact')}
+                    >
+                        Get in contact
+                    </button>
                 </div>
             </div>
 

@@ -82,12 +82,13 @@
     max-width: 1000px;
     max-height: 600;
 
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 48px;
     align-items: center;
 }
 
-h2 {
+.text-btn h2 {
     height: 54px;
     font-family: 'Bricolage Grotesque', sans-serif;
     font-size: 48px;

@@ -9,6 +9,11 @@ import Beneficiary from './BeneficiaryImage.svg'
 const HomePage = () => {
 
     const navigate = useNavigate();
+    const handlePageNavigation= (page) => {
+        const pagePrefix = `/${page}`
+        navigate(pagePrefix);
+        window.scrollTo(0, 0);
+    }
 
     return (
         <div className='HomePage'>
@@ -20,13 +25,13 @@ const HomePage = () => {
                     <div className='btn'>
                         <button 
                             className='contact-btn'
-                            onClick={() => navigate('/Contact')}
+                            onClick={() => handlePageNavigation('contact')}
                         >
                             Get in contact
                         </button>
                         <button 
                             className='about-btn'
-                            onClick={() => navigate('/About')}
+                            onClick={() => handlePageNavigation('about')}
                         >
                             About us
                         </button>
@@ -77,7 +82,7 @@ const HomePage = () => {
 
                     <p 
                         id="link-learn-more"
-                        onClick={() => navigate('/employers')}
+                        onClick={() => handlePageNavigation('employers')}
                     >
                         Learn more &gt;
                     </p>
@@ -100,7 +105,7 @@ const HomePage = () => {
                     {/* <a href='temp'>Learn more &gt;</a> */}
                     <p 
                         id="link-learn-more"
-                        onClick={() => navigate('/employers')}
+                        onClick={() => handlePageNavigation('employers')}
                     >
                         Learn more &gt;
                     </p>
@@ -122,7 +127,7 @@ const HomePage = () => {
                         <p>Employer-sponsored wills provide your employees and their families with peace of mind, while keeping you competitive in today’s recruitment landscape.</p>
                         <button 
                             className='contact-btn'
-                            onClick={() => navigate('/employers')}
+                            onClick={() => handlePageNavigation('employers')}
                         >
                             Learn more
                         </button>
@@ -152,7 +157,7 @@ const HomePage = () => {
                     <p>Stop wasting time updating each and every financial institution every time there’s a change in an estate plan or will. Automate with Bestated!</p>
                     <button 
                         className='about-btn'
-                        onClick={() => navigate('/professional-financialAdvisors')}
+                        onClick={() => handlePageNavigation('professional-financialAdvisors')}
                     >Learn more</button>
                 </div>
             </div>
@@ -162,7 +167,7 @@ const HomePage = () => {
                 <div className='btn'>
                     <button 
                         className='contact-btn'
-                        onClick={() => navigate('/Contact')}
+                        onClick={() => handlePageNavigation('contact')}
                     >
                         Get in contact
                     </button>
