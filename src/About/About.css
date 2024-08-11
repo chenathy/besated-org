@@ -1,5 +1,5 @@
 .About {
-    width: 1440px;
+    width: 100vw;
     justify-content: center;
     background-color: #F5F5F5;
 }
@@ -11,7 +11,7 @@
 }
 
 .Story {
-    width: 1440px;
+    width: 100vw;
     height: 765px;
 
     display: flex;
@@ -21,7 +21,7 @@
 }
 
 .Story img {
-    width: 1440px;
+    width: 100vw;
     height: 765px;
     background-size: cover;
 }
@@ -71,7 +71,7 @@
 
 
 .About .Usage {
-    width: 1440px;
+    width: 100vw;
     height: 912px;
     display: flex;
     align-items: center;
@@ -177,4 +177,5 @@ h2 {
 .About .CTA {
     margin-top: 0;
     gap: 0px;
+    margin-left: 0px;
 }

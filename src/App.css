@@ -2,6 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap');
 
 
+.container {
+    max-width: 100vw;
+    margin: auto;
+    width: 100%;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+
 /* Buttons  */
 .contact-btn {
     width: 147px;
@@ -81,7 +94,7 @@
 .Hero {
     display: flex;
     justify-content: center;
-    max-width: 1440px;
+    max-width: 100vw;
     max-height: 628px;
     top: 100px;
     padding: 100px 120px 100px 120px;
@@ -232,10 +245,13 @@
 /* CTA  */
 
 .CTA {
-    max-width: 1440px;
+    width: 100vw;
     max-height: 348px;
+    /* width: 100%; */
     margin-top: 160px;
-    padding: 64px 120px 64px 120px;
+    /* padding: 64px 120px 64px 120px; */
+    padding-top: 64px;
+    padding-bottom: 64px;
     gap: 48px;
     background-color: #23395B;
     display: flex;
@@ -267,8 +283,6 @@
     display: grid;
     justify-content: center;
     align-items: center;
-
-    border: 1px black dashed;
 }
 
 .How .intro {
