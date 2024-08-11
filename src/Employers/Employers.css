@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap');
 
 .Employers {
-    width: 1440px;
+    width: 100vw;
     background-color: #F5F5F5;
     display: flex;
     flex-direction: column;
@@ -12,8 +12,7 @@
 
 .Employers hr {
     width: 1200px;
-    margin-left: 120px;
-    border: 2px solid #4BBEDB;
+    border: 1.5px solid #4BBEDB;
 }
 
 .Employers h2 {
@@ -95,10 +94,15 @@
 /* How  */
 .Employers .How {
     max-height: 1143px;
+    /* margin-top: 120px; */
     padding: 160px 120px 160px 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .Employers .How .intro {
+    margin-left: 0px;
     max-height: 270px;
 }
 

@@ -16,7 +16,7 @@
     position: relative;
     justify-content: space-between;
     height: 100px;
-    width: 1440px;
+    width: 100vw;
 }
 
 .navbar .logo {
@@ -73,7 +73,8 @@
     width: 257px;
     height: 116px;
     position: absolute;
-    left: 814px;
+    /* left: 814px; */
+    left: 60%;
     border-radius: 4px;
     box-shadow: 0px 4px 4px -4px #0C0C0D0D;
     box-shadow: 0px 16px 32px -4px #0C0C0D1A;
