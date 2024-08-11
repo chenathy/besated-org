@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './Employers.css';
 import Hero from './HeroImage.svg';
 import AttractIcon from './Icon_Attract.svg';

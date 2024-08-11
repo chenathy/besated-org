@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Attorneys.css';
 import Hero from './Hero.png';
 import HowIcon from './HowIcon.png';
@@ -9,6 +10,9 @@ import Group4 from './Group4.svg';
 
 
 const ForAttorneys = () => {
+
+    const navigate = useNavigate();
+
     return (
         <div className='Attorneys'>
 
@@ -17,7 +21,11 @@ const ForAttorneys = () => {
                     <h1>Let Bestated grow your business and help more clients.</h1>
                     <h4>Join Bestated’s two-sided marketplace to expand your client base. Let us do the hard work of lead generation!</h4>
                     <div className='btn'>
-                        <button className='contact-btn'>Get in contact</button>
+                        <button 
+                            className='contact-btn'
+                            onClick={() => navigate('/contact')}
+                        >Get in contact
+                        </button>
                     </div>
                 </div>
 
@@ -37,7 +45,10 @@ const ForAttorneys = () => {
                             While the use of genAI can shorten the traditional process of drafting these legal documents, we still need our attorney partners to review and notarize them. 
                             This is where you come in! Join Bestated today to expand your client base, and stay updated with the latest in AI applications.
                             <br/><br/>
-                            <span>Let’s get started &gt;</span>
+                            <span 
+                                onClick={() => navigate('/contact')}
+                            >Let’s get started &gt;
+                            </span>
                         </p>
                 </div>
 
@@ -101,7 +112,12 @@ const ForAttorneys = () => {
                         Reach out to learn more!
                     </p>
 
-                    <p id="link-contact">Get in contact &gt;</p>
+                    <p 
+                        id='link-contact'
+                        onClick={() => navigate('/contact')}
+                    >
+                        Get in contact &gt;
+                    </p>
                     {/* <a href='temp'>Learn more &gt;</a> */}
                 </div>
 
@@ -117,7 +133,12 @@ const ForAttorneys = () => {
                         If you are an attorney outside of these states and are interested in helping us expand to your state, please don’t hesitate to reach out!
                     </p>
                     {/* <a href='temp'>Learn more &gt;</a> */}
-                    <p id="link-contact">Get in contact &gt;</p>
+                    <p 
+                        id='link-contact'
+                        onClick={() => navigate('/contact')}
+                    >
+                        Get in contact &gt;
+                    </p>
 
                 </div>
 
@@ -126,7 +147,12 @@ const ForAttorneys = () => {
             <div className='CTA'>
                 <h1>Ready to join Bestated<br/>and expand your business?</h1> 
                 <div className='btn'>
-                    <button className='contact-btn'>Get in contact</button>
+                    <button 
+                        className='contact-btn'
+                        onClick={() => navigate('/contact')}
+                    >
+                        Get in contact
+                    </button>
                 </div>
             </div>
 

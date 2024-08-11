@@ -1,10 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './FinancialAdvisor.css';
 import Hero from './Hero.png';
 import HowIcon from './How.png';
 
 
 const ForFinancialAdvisors = () => {
+
+    const navigate = useNavigate();
+
     return (
         <div className='Financial'>
 
@@ -13,7 +17,12 @@ const ForFinancialAdvisors = () => {
                     <h1>Streamline beneficiary updates with our API</h1>
                     <h4>Bestated’s novel beneficiary API does the heavy lifting so you and your administrative staff don’t have to.</h4>
                     <div className='btn'>
-                        <button className='contact-btn'>Get in contact</button>
+                        <button 
+                            className='contact-btn'
+                            onClick={() => navigate('/contact')}
+                        >
+                            Get in contact
+                        </button>
                     </div>
                 </div>
 
@@ -34,7 +43,11 @@ const ForFinancialAdvisors = () => {
                         Say goodbye to manual updates and streamline your workflow effortlessly. 
                         Take back your administrative staff’s time from endless updates today. 
                         <br/><br/>
-                        <span>Get in contact with our team! &gt;</span>
+                        <span 
+                            onClick={() => navigate('/contact')}
+                        >
+                            Get in contact with our team! &gt;
+                        </span>
                     </p>
                 </div>
 
@@ -64,7 +77,12 @@ const ForFinancialAdvisors = () => {
             <div className='CTA'>
                 <h1>Ready to join Bestated<br/>and expand your business?</h1> 
                 <div className='btn'>
-                    <button className='contact-btn'>Get in contact</button>
+                    <button 
+                        className='contact-btn'
+                        onClick={() => navigate('/contact')}
+                    >
+                        Get in contact
+                    </button>
                 </div>
             </div>
 
