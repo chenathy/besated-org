@@ -18,8 +18,18 @@ const HomePage = () => {
                     <h1>Help your employees avoid the painful probate process.</h1>
                     <h4>Bestated is the first employer-sponsored will, power of attorneys, and medical drective platform.</h4>
                     <div className='btn'>
-                        <button className='contact-btn'>Get in contact</button>
-                        <button className='about-btn'>About us</button>
+                        <button 
+                            className='contact-btn'
+                            onClick={() => navigate('/Contact')}
+                        >
+                            Get in contact
+                        </button>
+                        <button 
+                            className='about-btn'
+                            onClick={() => navigate('/About')}
+                        >
+                            About us
+                        </button>
                     </div>
                 </div>
 
@@ -65,7 +75,12 @@ const HomePage = () => {
                         As a result, families are left unprepared if worse comes to worst and there is an unexpected tragedy.
                     </p>
 
-                    <p id="link-learn-more">Learn more &gt;</p>
+                    <p 
+                        id="link-learn-more"
+                        onClick={() => navigate('/employers')}
+                    >
+                        Learn more &gt;
+                    </p>
                     {/* <a href='temp'>Learn more &gt;</a> */}
                 </div>
 
@@ -83,7 +98,12 @@ const HomePage = () => {
                         and attorney partners to reduce costs and increase accessibility for these complex legal needs.
                     </p>
                     {/* <a href='temp'>Learn more &gt;</a> */}
-                    <p id="link-learn-more">Learn more &gt;</p>
+                    <p 
+                        id="link-learn-more"
+                        onClick={() => navigate('/employers')}
+                    >
+                        Learn more &gt;
+                    </p>
 
                 </div>
 
@@ -100,7 +120,12 @@ const HomePage = () => {
                             <h2>A unique benefit to attract and retain top talent</h2>
                         </div>
                         <p>Employer-sponsored wills provide your employees and their families with peace of mind, while keeping you competitive in today’s recruitment landscape.</p>
-                        <button className='contact-btn'>Learn more</button>
+                        <button 
+                            className='contact-btn'
+                            onClick={() => navigate('/employers')}
+                        >
+                            Learn more
+                        </button>
                     </div>
                     
                     <img 
@@ -125,14 +150,22 @@ const HomePage = () => {
                         <h2>Our Beneficiary API will simplify the process of updating your will.</h2>
                     </div>
                     <p>Stop wasting time updating each and every financial institution every time there’s a change in an estate plan or will. Automate with Bestated!</p>
-                    <button className='about-btn'>Learn more</button>
+                    <button 
+                        className='about-btn'
+                        onClick={() => navigate('/professional-financialAdvisors')}
+                    >Learn more</button>
                 </div>
             </div>
 
             <div className='CTA'>
                 <h1>Opt in to accessible, <br/>employer-sponsored wills today!</h1> 
                 <div className='btn'>
-                    <button className='contact-btn'>Get in contact</button>
+                    <button 
+                        className='contact-btn'
+                        onClick={() => navigate('/Contact')}
+                    >
+                        Get in contact
+                    </button>
                 </div>
             </div>
             
