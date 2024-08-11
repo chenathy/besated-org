@@ -8,6 +8,11 @@ import HowIcon from './How.png';
 const ForFinancialAdvisors = () => {
 
     const navigate = useNavigate();
+    const handlePageNavigation= (page) => {
+        const pagePrefix = `/${page}`
+        navigate(pagePrefix);
+        window.scrollTo(0, 0);
+    }
 
     return (
         <div className='Financial'>
@@ -19,7 +24,7 @@ const ForFinancialAdvisors = () => {
                     <div className='btn'>
                         <button 
                             className='contact-btn'
-                            onClick={() => navigate('/contact')}
+                            onClick={() => handlePageNavigation('contact')}
                         >
                             Get in contact
                         </button>
@@ -44,7 +49,7 @@ const ForFinancialAdvisors = () => {
                         Take back your administrative staff’s time from endless updates today. 
                         <br/><br/>
                         <span 
-                            onClick={() => navigate('/contact')}
+                            onClick={() => handlePageNavigation('contact')}
                         >
                             Get in contact with our team! &gt;
                         </span>
@@ -79,7 +84,7 @@ const ForFinancialAdvisors = () => {
                 <div className='btn'>
                     <button 
                         className='contact-btn'
-                        onClick={() => navigate('/contact')}
+                        onClick={() => handlePageNavigation('contact')}
                     >
                         Get in contact
                     </button>

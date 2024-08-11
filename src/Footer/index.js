@@ -11,6 +11,11 @@ import Facebook from './Facebook.svg';
 const Footer = () => {
 
     const navigate = useNavigate();
+    const handlePageNavigation= (page) => {
+        const pagePrefix = `/${page}`
+        navigate(pagePrefix);
+        window.scrollTo(0, 0);
+    }
 
     return (
         <footer className='footer'>
@@ -19,18 +24,18 @@ const Footer = () => {
                 <img
                     src={Logo}
                     alt='Logo'
-                    onClick={() => navigate('/')}
+                    onClick={() => handlePageNavigation('')}
                 />
 
                 <div className='menu'>
                     <div>
-                        <p onClick={() => navigate('/employers')}>For employers</p>
-                        <p onClick={() => navigate('/professional-attorneys')}>For attorneys</p>
-                        <p onClick={() => navigate('/professional-financialAdvisors')}>For financial advisors</p>
+                        <p onClick={() => handlePageNavigation('employers')}>For employers</p>
+                        <p onClick={() => handlePageNavigation('professional-attorneys')}>For attorneys</p>
+                        <p onClick={() => handlePageNavigation('professional-financialAdvisors')}>For financial advisors</p>
                     </div>
                     <div>
-                        <p onClick={() => navigate('/about')}>About</p>
-                        <p onClick={() => navigate('/contact')}>Get in contact</p>
+                        <p onClick={() => handlePageNavigation('about')}>About</p>
+                        <p onClick={() => handlePageNavigation('contact')}>Get in contact</p>
                         <span></span>
                     </div>
                 </div>

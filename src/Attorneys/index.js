@@ -12,6 +12,11 @@ import Group4 from './Group4.svg';
 const ForAttorneys = () => {
 
     const navigate = useNavigate();
+    const handlePageNavigation= (page) => {
+        const pagePrefix = `/${page}`
+        navigate(pagePrefix);
+        window.scrollTo(0, 0);
+    }
 
     return (
         <div className='Attorneys'>
@@ -23,7 +28,7 @@ const ForAttorneys = () => {
                     <div className='btn'>
                         <button 
                             className='contact-btn'
-                            onClick={() => navigate('/contact')}
+                            onClick={() => handlePageNavigation('contact')}
                         >Get in contact
                         </button>
                     </div>
@@ -46,7 +51,7 @@ const ForAttorneys = () => {
                             This is where you come in! Join Bestated today to expand your client base, and stay updated with the latest in AI applications.
                             <br/><br/>
                             <span 
-                                onClick={() => navigate('/contact')}
+                                onClick={() => handlePageNavigation('contact')}
                             >Let’s get started &gt;
                             </span>
                         </p>
@@ -114,7 +119,7 @@ const ForAttorneys = () => {
 
                     <p 
                         id='link-contact'
-                        onClick={() => navigate('/contact')}
+                        onClick={() => handlePageNavigation('contact')}
                     >
                         Get in contact &gt;
                     </p>
@@ -135,7 +140,7 @@ const ForAttorneys = () => {
                     {/* <a href='temp'>Learn more &gt;</a> */}
                     <p 
                         id='link-contact'
-                        onClick={() => navigate('/contact')}
+                        onClick={() => handlePageNavigation('contact')}
                     >
                         Get in contact &gt;
                     </p>
@@ -149,7 +154,7 @@ const ForAttorneys = () => {
                 <div className='btn'>
                     <button 
                         className='contact-btn'
-                        onClick={() => navigate('/contact')}
+                        onClick={() => handlePageNavigation('contact')}
                     >
                         Get in contact
                     </button>

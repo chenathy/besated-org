@@ -11,6 +11,11 @@ import Nisha from './Nisha.png';
 const About = () => {
 
     const navigate = useNavigate();
+    const handlePageNavigation= (page) => {
+        const pagePrefix = `/${page}`
+        navigate(pagePrefix);
+        window.scrollTo(0, 0);
+    }
 
     return (
         <div className='About'>
@@ -42,7 +47,7 @@ const About = () => {
 
                     <button 
                         className='contact-btn'
-                        onClick={() => navigate('/employers')}
+                        onClick={() => handlePageNavigation('employers')}
                     >
                         Learn more
                     </button>
@@ -71,7 +76,7 @@ const About = () => {
                     </p>
                     <button 
                         className='contact-btn'
-                        onClick={() => navigate('/employers')}
+                        onClick={() => handlePageNavigation('employers')}
                     >
                         Learn more
                     </button>
@@ -133,7 +138,7 @@ const About = () => {
                 <div className='btn'>
                     <button 
                         className='contact-btn'
-                        onClick={() => navigate('/contact')}
+                        onClick={() => handlePageNavigation('contact')}
                     >
                         Get in contact
                     </button>

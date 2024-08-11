@@ -16,6 +16,11 @@ import CalloutIcon from './CalloutIcon.png';
 const ForEmployers = () => {
 
     const navigate = useNavigate();
+    const handlePageNavigation= (page) => {
+        const pagePrefix = `/${page}`
+        navigate(pagePrefix);
+        window.scrollTo(0, 0);
+    }
 
     return(
         <div className='Employers'>
@@ -26,7 +31,7 @@ const ForEmployers = () => {
                     <div className='btn'>
                         <button 
                             className='contact-btn'
-                            onClick={() => navigate('/contact')}
+                            onClick={() => handlePageNavigation('contact')}
                         >Get in contact
                         </button>
                     </div>
@@ -98,7 +103,7 @@ const ForEmployers = () => {
                         such as wills, power of attorney, and medical directives that then get sent to our attorney partners for final touches and notarization. 
                         <br/> <br/>
                         <span 
-                            onClick={() => navigate('/contact')}
+                            onClick={() => handlePageNavigation('contact')}
                         >Let’s get started &gt;
                         </span>
                     </p>
@@ -158,7 +163,7 @@ const ForEmployers = () => {
                     <p>Whether you want to pay for this benefit yourself or have your employer add it, we’re here to help!</p>
                     <button 
                         className='contact-btn'
-                        onClick={() => navigate('/contact')}
+                        onClick={() => handlePageNavigation('contact')}
                     >Reach out
                     </button>
                 </div>
@@ -174,7 +179,7 @@ const ForEmployers = () => {
                 <div className='btn'>
                     <button 
                         className='contact-btn'
-                        onClick={() => navigate('/contact')}
+                        onClick={() => handlePageNavigation('contact')}
                     >Get in contact
                     </button>
                 </div>
