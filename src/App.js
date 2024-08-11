@@ -21,18 +21,12 @@ const App = () => {
                     <Route path='/professional-attorneys' element={<ForAttorneys/>} />
                     <Route path='/professional-financialAdvisors' element={<ForFinancialAdvisors/>} />
                     <Route path='/about' element={<About />} />
-                    <Route path="/contact" element={<Contact />} /> 
+                    <Route path='/contact' element={<Contact />} /> 
+                    <Route path='/besated-org' element={<HomePage/>} />
                 </Routes>
             </Router>
             <Footer />
         </div>
-
-        // <div>
-        //     <div className='container'>
-        //         <h1>Hello, Welcome to Bestated LLC</h1>
-        //     </div>
-        //     <ContactPage/>
-        // </div>
     );
 };
 
