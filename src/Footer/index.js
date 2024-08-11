@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Footer.css';
 import Logo from './Bestated.ai.svg';
 import LinkedIn from './LinkedIn.svg';
@@ -8,6 +9,9 @@ import Facebook from './Facebook.svg';
 
 
 const Footer = () => {
+
+    const navigate = useNavigate();
+
     return (
         <footer className='footer'>
             <hr/>
@@ -15,18 +19,19 @@ const Footer = () => {
                 <img
                     src={Logo}
                     alt='Logo'
+                    onClick={() => navigate('/')}
                 />
 
                 <div className='menu'>
                     <div>
-                        <p>For employers</p>
-                        <p>For attorneys</p>
-                        <p>For financial advisors</p>
+                        <p onClick={() => navigate('/employers')}>For employers</p>
+                        <p onClick={() => navigate('/professional-attorneys')}>For attorneys</p>
+                        <p onClick={() => navigate('/professional-financialAdvisors')}>For financial advisors</p>
                     </div>
                     <div>
-                        <p>About</p>
-                        <p>Get in contact</p>
-                        <p></p>
+                        <p onClick={() => navigate('/about')}>About</p>
+                        <p onClick={() => navigate('/contact')}>Get in contact</p>
+                        <span></span>
                     </div>
                 </div>
 

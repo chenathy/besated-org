@@ -26,9 +26,10 @@ hr {
 }
 
 
-img {
+.footer img {
     width: 154px;
     height: 30px;
+    cursor: pointer;
 }
 
 .menu {
@@ -36,6 +37,7 @@ img {
     max-height: 118px;
     gap: 64px;
     display: flex;
+    align-items: start;
     text-align: start;
 }
 
@@ -48,6 +50,8 @@ img {
     font-weight: 600;
     font-size: 18px;
     line-height: 25.2px;
+    margin-bottom: 20px;
+    cursor: pointer;
 
 }
 
