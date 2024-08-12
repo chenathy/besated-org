@@ -21,7 +21,7 @@ const HomePage = () => {
             <div className='Hero'>
                 <div className='text-btn'>
                     <h1>Help your employees avoid the painful probate process.</h1>
-                    <h4>Bestated is the first employer-sponsored will, power of attorneys, and medical drective platform.</h4>
+                    <h4>Bestated is the first employer-sponsored will, power of attorney, and medical directive platform.</h4>
                     <div className='btn'>
                         <button 
                             className='contact-btn'
