@@ -22,11 +22,11 @@ const NavBar = () => {
                 </Link>
                 <div className='ul'>
                     <ul>
-                        <li><Link to='/employers'>For employers</Link></li>
+                        <li><Link to='/employers'>For Employers</Link></li>
 
                         <li className='nav-links'>
                             <div onClick={() => setDropdownOpen(!dropdownOpen)}>
-                                <span>For professionals</span>
+                                <span>For Professionals</span>
                             </div>
                         </li>
 
