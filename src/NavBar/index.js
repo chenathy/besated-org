@@ -48,7 +48,7 @@ const NavBar = () => {
             {dropdownOpen && (
                 <div className='navbar ul dropdown'>
                     <li onClick={() => setDropdownOpen(false)}><Link to='/professional-attorneys'><p>For Attorneys &gt;</p></Link></li>
-                    <li onClick={() => setDropdownOpen(false)}><Link to='/professional-financialAdvisors'><p>For financial advisors &gt;</p></Link></li>
+                    <li onClick={() => setDropdownOpen(false)}><Link to='/professional-financialAdvisors'><p>For Financial Advisors &gt;</p></Link></li>
                 </div>
             )}
 
