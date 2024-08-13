@@ -6,13 +6,13 @@ import TikTokIcon from './TikTok.svg';
 import FacebookIcon from './Facebook.svg';
 
 
-const ThankYou = () => {
+const ThankYouDiv = () => {
 
     return (
         <div className='Contact ThankYou'>
             <h3>
-                Thanks for submitting a form. 
-                <br/><br/>
+                Thanks for submitting a form.
+                <br/> 
                 Someone from our team will be in contact shortly!
             </h3>
             <p>In the meantime, follow along with us on socials:</p>
@@ -39,4 +39,4 @@ const ThankYou = () => {
 
 };
 
-export default ThankYou;
+export default ThankYouDiv;
