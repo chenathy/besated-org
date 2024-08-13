@@ -1,12 +1,13 @@
 .About {
     width: 100vw;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     background-color: #F5F5F5;
 }
 
 .About hr {
     width: 1200px;
-    margin-left: 120px;
     border: 1.5px solid #4BBEDB;
 }
 
