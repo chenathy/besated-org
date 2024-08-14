@@ -33,7 +33,7 @@ hr {
 }
 
 .menu {
-    max-width: 372px;
+    max-width: 400px;
     max-height: 118px;
     gap: 64px;
     display: flex;
