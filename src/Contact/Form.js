@@ -87,6 +87,24 @@ const FormDiv = () => {
     }
 
 
+    // Collect Information
+    const [formValue, setFormValue] = useState({
+        contactName: '',
+        type: '',
+        companyName: '',
+        size: '',
+        email: '',
+        phone: '',
+        state: '',
+        message: ''
+    });
+
+
+    const handleSubmit = (e) => {
+        // e.preventDefault();
+        console.log(`formValue: ${JSON.stringify(formValue)}`); 
+    } 
+
     return (
         <div className='Contact Form'>
 
@@ -122,7 +140,7 @@ const FormDiv = () => {
                         className='form-form'
                         // formValue={formValue} 
                         // onChange={handleChange} 
-                        // onSubmit={handleSubmit}
+                        // onSubmit={ehandleSubmit}
                     >
                         <Form.Group className='form-group'>
                             <Form.ControlLabel htmlFor='name'><p>Name <span id='req'>*</span></p></Form.ControlLabel>
@@ -132,16 +150,19 @@ const FormDiv = () => {
                                 type='text' 
                                 placeholder='Enter your full name'
                                 required 
+                                onChange={(value) => setFormValue((prev) => ({...prev, contactName: value}))}
                             />
                         </Form.Group>
 
                         <Form.Group className='form-group'>
                             <Form.ControlLabel><p>Who are you ? <span id='req'>*</span></p></Form.ControlLabel>
                             <RadioGroup name='type'>
-                                {companySizeOptions.map(option => (
+                                {clientTypeOptions.map(option => (
                                     <Radio
                                         key={option.value}
                                         value={option.value}
+                                        required
+                                        onChange={(value) => setFormValue((prev) => ({...prev, type: value}))}
                                     >
                                         {option.label}
                                     </Radio>
@@ -156,8 +177,8 @@ const FormDiv = () => {
                                 name='companyName' 
                                 id='companyName'
                                 type='text' 
-                                required 
                                 placeholder='Enter your company name'
+                                onChange={(value) => setFormValue((prev) => ({...prev, companyName: value}))}
                             />
                         </Form.Group>
 
@@ -165,11 +186,12 @@ const FormDiv = () => {
                         <Form.Group className='form-group'>
                             <Form.ControlLabel><p>Number of employees <span id='optional'>(optional)</span></p></Form.ControlLabel>
                             <RadioGroup name='size'>
-                                {clientTypeOptions.map(option => (
+                                {companySizeOptions.map(option => (
                                     <Radio
                                         key={option.value}
                                         value={option.value}
-                                         className='radio'
+                                        onChange={(value) => setFormValue((prev) => ({...prev, size: value}))}
+                                        className='radio'
                                     >
                                         {option.label}
                                     </Radio>
@@ -186,6 +208,7 @@ const FormDiv = () => {
                                 id='email'
                                 type='text' 
                                 placeholder='Give us the best email to contact you at'
+                                onChange={(value) => setFormValue((prev) => ({...prev, email: value}))}
                                 required 
                             />
                         </Form.Group>
@@ -198,6 +221,7 @@ const FormDiv = () => {
                                 id='phone'
                                 type='text' 
                                 placeholder='Enter your phone number'
+                                onChange={(value) => setFormValue((prev) => ({...prev, phone: value}))}
                             />
                         </Form.Group>
 
@@ -209,29 +233,32 @@ const FormDiv = () => {
                                 accepter={SelectPicker}
                                 data={usStates}
                                 placeholder='Choose state'
+                                onChange={(value) => setFormValue((prev) => ({...prev, state: value}))}
                                 required
                             />
                         </Form.Group>
 
                         <Form.Group className='form-group'>
                             <Form.ControlLabel ><p>Message <span id='req'>*</span></p></Form.ControlLabel>
-                            <Form.Control
-                                name='message'
-                                accepter={Textarea}
+                            <Input 
+                                as='textarea'
                                 rows={5}
-                                placeholder='Shoot us a message!'
                                 required
+                                onChange={(value) => setFormValue((prev) => ({...prev, message: value}))}
                             />
                         </Form.Group>
 
 
-                        <button className='submit-btn'>Submit Message</button>
+                        <button 
+                            className='submit-btn'
+                            onClick={e => handleSubmit(e)}
+                        >
+                            Submit Message
+                        </button>
 
                     </Form>
                 </div>
             
-
-
 
             </div>
 
