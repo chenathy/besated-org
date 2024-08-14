@@ -29,8 +29,8 @@ const Footer = () => {
 
                 <div className='menu'>
                     <div>
-                        <p onClick={() => handlePageNavigation('employers')}>For employers</p>
-                        <p onClick={() => handlePageNavigation('professional-attorneys')}>For attorneys</p>
+                        <p onClick={() => handlePageNavigation('employers')}>For Employers</p>
+                        <p onClick={() => handlePageNavigation('professional-attorneys')}>For Attorneys</p>
                         <p onClick={() => handlePageNavigation('professional-financialAdvisors')}>For Financial Advisors</p>
                     </div>
                     <div>
