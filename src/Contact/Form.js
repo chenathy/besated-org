@@ -134,9 +134,31 @@ const FormDiv = () => {
     };
 
 
-    const handleSubmit = () => {
+    const handleSubmit = async() => {
         if (validateForm()){
             console.log(`formValue: ${JSON.stringify(formValue)}`); 
+
+            // Saving Data throught API 
+            try {
+                const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}:${process.env.REACT_APP_BACKEND_PORT}/submit`, {
+                    method: 'POST',
+                    headers: {
+                    'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData),
+                });
+    
+                if (response.ok) {
+                    alert('Your Info has been submitted successfully!');
+                } else {
+                    alert('Failed to submit data.');
+                }
+            } catch (error) {
+                console.error('Error submitting data:', error);
+                alert('An error occurred while submitting data.');
+            }
+
+
         } else {
             console.log(`Missing Info `)
         }
