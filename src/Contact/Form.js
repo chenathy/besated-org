@@ -99,10 +99,47 @@ const FormDiv = () => {
         message: ''
     });
 
+    const [hasErrors, setHasErrors] = useState(false);
+    const [errorMessages, setErrorMessages] = useState([]);
 
-    const handleSubmit = (e) => {
-        // e.preventDefault();
-        console.log(`formValue: ${JSON.stringify(formValue)}`); 
+    const validateForm = () => {
+        const errors = [];
+    
+        if (!formValue.contactName.trim()) {
+          errors.push('Name is required.');
+        }
+    
+        if (!formValue.type) {
+          errors.push('Please select your client type.');
+        }
+    
+        if (!formValue.email.trim()) {
+          errors.push('Email is required.');
+        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formValue.email)) {
+          errors.push('Please enter a valid email address.');
+        }
+    
+        if (!formValue.state) {
+          errors.push('State is required.');
+        }
+    
+        if (!formValue.message.trim()) {
+          errors.push('Message is required.');
+        }
+    
+        setHasErrors(errors.length > 0);
+        setErrorMessages(errors);
+    
+        return errors.length === 0; 
+    };
+
+
+    const handleSubmit = () => {
+        if (validateForm()){
+            console.log(`formValue: ${JSON.stringify(formValue)}`); 
+        } else {
+            console.log(`Missing Info `)
+        }
     } 
 
     return (
@@ -134,6 +171,15 @@ const FormDiv = () => {
 
             <div className='Form-section'>
                 <div className='form' id='form'>
+                {/* {hasErrors && (
+                    <div className='error-messages'>
+                        <ul>
+                            {errorMessages.map((message, index) => (
+                                <li key={index}>{message}</li>
+                            ))}
+                        </ul>
+                    </div>
+                )} */}
                     
                     <Form
                         fluid
@@ -150,13 +196,14 @@ const FormDiv = () => {
                                 type='text' 
                                 placeholder='Enter your full name'
                                 required 
+                                value={formValue.contactName}
                                 onChange={(value) => setFormValue((prev) => ({...prev, contactName: value}))}
                             />
                         </Form.Group>
 
                         <Form.Group className='form-group'>
                             <Form.ControlLabel><p>Who are you ? <span id='req'>*</span></p></Form.ControlLabel>
-                            <RadioGroup name='type'>
+                            <RadioGroup name='type' required>
                                 {clientTypeOptions.map(option => (
                                     <Radio
                                         key={option.value}
@@ -178,6 +225,7 @@ const FormDiv = () => {
                                 id='companyName'
                                 type='text' 
                                 placeholder='Enter your company name'
+                                value={formValue.companyName}
                                 onChange={(value) => setFormValue((prev) => ({...prev, companyName: value}))}
                             />
                         </Form.Group>
@@ -208,8 +256,9 @@ const FormDiv = () => {
                                 id='email'
                                 type='text' 
                                 placeholder='Give us the best email to contact you at'
+                                value={formValue.email}
                                 onChange={(value) => setFormValue((prev) => ({...prev, email: value}))}
-                                required 
+                                required
                             />
                         </Form.Group>
 
@@ -221,6 +270,7 @@ const FormDiv = () => {
                                 id='phone'
                                 type='text' 
                                 placeholder='Enter your phone number'
+                                value={formValue.phone}
                                 onChange={(value) => setFormValue((prev) => ({...prev, phone: value}))}
                             />
                         </Form.Group>
@@ -244,6 +294,7 @@ const FormDiv = () => {
                                 as='textarea'
                                 rows={5}
                                 required
+                                value={formValue.message}
                                 onChange={(value) => setFormValue((prev) => ({...prev, message: value}))}
                             />
                         </Form.Group>
