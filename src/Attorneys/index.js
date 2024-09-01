@@ -1,12 +1,14 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Attorneys.css';
-import Hero from './Hero.png';
-import HowIcon from './HowIcon.png';
-import Group1 from './Group1.svg';
-import Group2 from './Group2.svg';
-import Group3 from './Group3.svg';
-import Group4 from './Group4.svg';
+// import Hero from './Hero.png';
+// import HowIcon from './HowIcon.png';
+import Group1 from '../../public/assets/icons/Group1.svg';
+import Group2 from '../../public/assets/icons/Group2.svg';
+import Group3 from '../../public/assets/icons/Group3.svg';
+import Group4 from '../../public/assets/icons/Group4.svg';
+import HeroIcon from '../../public/assets/images/attorney-hero.jpg';
+import HowIcon from '../../public/assets/images/attorney-how.jpg';
 
 
 const ForAttorneys = () => {
@@ -34,10 +36,12 @@ const ForAttorneys = () => {
                     </div>
                 </div>
 
-                <img 
-                    src={Hero} 
-                    alt='EmployerHero'
-                />
+                <div className='img-container'>
+                    <img 
+                        src={HeroIcon} 
+                        alt='EmployerHero'
+                    />
+                </div>
             </div>
 
             <div className='How'>
@@ -58,10 +62,12 @@ const ForAttorneys = () => {
                 </div>
 
                 <div className='secondary'>
-                    <img
-                        src={HowIcon}
-                        alt='HowIcon'
-                    />
+                    <div className='img-container'>
+                        <img
+                            src={HowIcon}
+                            alt='HowIcon'
+                        />
+                    </div>
                     <div className='steps'>
                         <h3>Here’s how it works:</h3>
                         <div className='step'>

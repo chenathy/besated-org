@@ -15,6 +15,25 @@
 
 }
 
+.Attorneys .img-container {
+    width: 528px;
+    height: 428px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+
+    border: 1px dashed navy ;
+}
+
+.Attorneys .img-container img {
+    position: absolute;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 .Attorneys .How .intro {
     width: 1050px;
     max-height: 411px;

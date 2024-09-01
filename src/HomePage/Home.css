@@ -130,23 +130,24 @@
     display: flex;
 }
 
-.image {
-
+.API .img-container {
     width: 528px;
     height: 428px;
-    border-radius: 8px;
     overflow: hidden;
-    
+    position: relative;
+    border-radius: 8px;
 }
 
-.API .image img {
-    width: auto;
-    height: 117%;
-    display: flex;
-    position: relative;
-    top: -12px;
-    left: -31px;
-    border-radius: 8px; 
+.API .img-container img {
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    object-fit: cover;
+    left: -30%;
+    width: 130%;
+    height: 100%;
+
 }
 
 
@@ -175,6 +176,7 @@
 .API .group h2 {
     width: 576px;
     height: 162px;
+    text-align: left;
 }
 
 
