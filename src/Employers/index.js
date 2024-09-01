@@ -1,16 +1,16 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Employers.css';
-import Hero from './HeroImage.svg';
-import AttractIcon from './Icon_Attract.svg';
-import LoyaltyIcon from './Icon_Loyalty.svg';
-import Productivity from './Icon_Productivity.svg';
-import HowIcon from './HowIcon.png';
-import Group1 from './Group1.svg';
-import Group2 from './Group2.svg';
-import Group3 from './Group3.svg';
-import Group4 from './Group4.svg';
-import CalloutIcon from './CalloutIcon.png';
+import HeroIcon from '../../public/assets/images/employer-hero.png';
+import HowIcon from '../../public/assets/images/employer-how.jpg';
+import CalloutIcon from '../../public/assets/images/employer-callout.jpg';
+import Group1 from '../../public/assets/icons/Group1.svg';
+import Group2 from '../../public/assets/icons/Group2.svg';
+import Group3 from '../../public/assets/icons/Group3.svg';
+import Group4 from '../../public/assets/icons/Group4.svg';
+import AttractIcon from '../../public/assets/icons/Icon_Attract.svg';
+import LoyaltyIcon from '../../public/assets/icons/Icon_Loyalty.svg';
+import Productivity from '../../public/assets/icons/Icon_Productivity.svg';
 
 
 const ForEmployers = () => {
@@ -37,10 +37,12 @@ const ForEmployers = () => {
                     </div>
                 </div>
 
-                <img 
-                    src={Hero} 
-                    alt='EmployerHero'
-                />
+                <div className='img-container'>
+                    <img 
+                        src={HeroIcon} 
+                        alt='EmployerHero'
+                    />
+                </div>
             </div>
 
             <div className='Benefits'>
@@ -110,10 +112,12 @@ const ForEmployers = () => {
                 </div>
 
                 <div className='secondary'>
-                    <img
-                        src={HowIcon}
-                        alt='HowIcon'
-                    />
+                    <div className='img-container'>
+                        <img
+                            src={HowIcon}
+                            alt='HowIcon'
+                        />
+                    </div>
                     <div className='steps'>
                         <h3>Here’s how it works:</h3>
                         <div className='step'>
@@ -168,10 +172,13 @@ const ForEmployers = () => {
                     </button>
                 </div>
                 
-                <img 
-                    src={CalloutIcon} 
-                    alt='CalloutIcon'
-                />
+                <div className='img-container'>
+                    <img 
+                        src={CalloutIcon} 
+                        alt='CalloutIcon'
+                    />
+                </div>
+                
             </div>
 
             <div className='CTA'>

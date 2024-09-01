@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Home.css';
-import Arrow from './noun-arrow.svg';
+import Arrow from '../../public/assets/icons/noun-arrow.svg';
 import HeroIcon from '../../public/assets/images/home-hero.jpg';
 import CallIcon from '../../public/assets/images/home-callout.jpg';
 import APIIcon from '../../public/assets/images/home-api.jpg';
