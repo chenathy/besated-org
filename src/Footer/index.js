@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Footer.css';
-import Logo from '../../public/assets/icons/Bestated.ai.svg';
+import Logo from '../../public/assets/icons/Bestated_white_logo.svg';
 import LinkedIn from '../../public/assets/icons/LinkedIn.svg';
 import Instagram from '../../public/assets/icons/Instagram.svg';
 import TikTok from '../../public/assets/icons/TikTok.svg';
