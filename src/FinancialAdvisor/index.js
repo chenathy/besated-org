@@ -1,8 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './FinancialAdvisor.css';
-import Hero from './Hero.png';
-import HowIcon from './How.png';
+import HeroIcon from '../../public/assets/images/financial-hero.jpg';
+import HowIcon from '../../public/assets/images/financial-info.png';
 
 
 const ForFinancialAdvisors = () => {
@@ -31,10 +31,12 @@ const ForFinancialAdvisors = () => {
                     </div>
                 </div>
 
-                <img 
-                    src={Hero} 
-                    alt='HomeHero'
-                />
+                <div className='img-container'>
+                    <img 
+                        src={HeroIcon} 
+                        alt='HomeHero'
+                    />
+                </div>
 
             </div>
 
@@ -57,10 +59,12 @@ const ForFinancialAdvisors = () => {
                 </div>
 
                 <div className='secondary'>
-                    <img
-                        src={HowIcon}
-                        alt='HowIcon'
-                    />
+                    <div className='img-container'>
+                        <img
+                            src={HowIcon}
+                            alt='HowIcon'
+                        />
+                    </div>
                     <div className='steps'>
                         <h3>Here’s how it works:</h3>
                         <p>

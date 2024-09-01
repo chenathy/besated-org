@@ -3,7 +3,7 @@ import { Form, RadioGroup, Radio, SelectPicker, Input } from 'rsuite';
 import 'rsuite/dist/rsuite.min.css';
 import '../App.css';
 import './Contact.css';
-import Hero from './Hero.png';
+import HeroIcon from '../../public/assets/images/contact-hero.jpg';
 
 
 const Contact = () => {
@@ -108,10 +108,12 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <img 
-                    src={Hero} 
-                    alt='HomeHero'
-                />
+                <div className='img-container'>
+                    <img 
+                        src={HeroIcon} 
+                        alt='HomeHero'
+                    />
+                </div>
 
             </div>
 

@@ -20,10 +20,6 @@
 
 
 /* HomePage: Numbers */
-.HomePage .Hero .img-container img{
-    top: -50%;
-}
-
 
 .Numbers {
     display: flex;
