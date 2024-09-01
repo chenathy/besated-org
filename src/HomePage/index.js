@@ -1,10 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Home.css';
-import Hero from './HeroImage.svg';
 import Arrow from './noun-arrow.svg';
-import Wills from './WillsImage.svg';
-import Beneficiary from './BeneficiaryImage.svg'
+import HeroIcon from '../../public/assets/images/home-hero.jpg';
+import CallIcon from '../../public/assets/images/home-callout.jpg';
+import APIIcon from '../../public/assets/images/home-api.jpg';
+
 
 const HomePage = () => {
 
@@ -38,10 +39,12 @@ const HomePage = () => {
                     </div>
                 </div>
 
-                <img 
-                    src={Hero} 
-                    alt='HomeHero'
-                />
+                <div className='img-container'>
+                    <img 
+                        src={HeroIcon} 
+                        alt='Home-Hero'
+                    />
+                </div>
 
             </div>
 
@@ -133,20 +136,22 @@ const HomePage = () => {
                         </button>
                     </div>
                     
-                    <img 
-                        src={Wills} 
-                        alt='HomePageLogo2'
-                    />
+                    <div className='img-container'>
+                        <img 
+                            src={CallIcon} 
+                            alt='Home-Callout'
+                        />
+                    </div>
                 </div>
             </div>
 
             <hr/>
 
             <div className='API'>
-                <div className='image'>
+                <div className='img-container'>
                     <img 
-                        src={Beneficiary}
-                        alt='Beneficiary'
+                        src={APIIcon}
+                        alt='Home-API'
                     />
                 </div>
                 <div className='text-btn'>
