@@ -1,6 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap');
 
+:root {
+    --CornerExtra-small: 4px; 
+    --CornerSmall: 8px;
+
+    --navy: #23395B;
+    --blue: #4BBEDB;
+    --mustard: #F1B23E;
+    --berry: #A13D63;
+    --dark-mustard: #BE800E;
+    --gray-10: #F5F5F5;
+    --gray-25: #D5D6D7;
+    --gray-85: #5A5B5E;
+    --light-blue: #CCEDF5;
+    --black: #141414;
+    --white: #FFFFFF;
+
+}
+
 
 .container {
     max-width: 100vw;
@@ -11,7 +29,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevents horizontal scroll */
+    overflow-x: auto;
 }
 
 
@@ -19,11 +37,11 @@ body, html {
 .contact-btn {
     width: 147px;
     height: 46px;
-    border-radius: 4px;
+    border-radius: var(--CornerExtra-small);
     padding: 10px 15px 10px 15px;
     gap: 10px;
-    background-color: #F1B23E;
-    color: #141414;
+    background-color: var(--mustard);
+    color: var(--black);
     font-family: 'Public Sans', sans-serif; 
     font-weight: 400;
     font-size: 18px;
@@ -45,7 +63,7 @@ body, html {
 .about-btn {
     width: 147px;
     height: 46px;
-    border-radius: 4px;
+    border-radius: var(--CornerExtra-small);
     padding: 10px 15px 10px 15px;
     gap: 10px;
     background-color:  #D5D6D7;
@@ -53,7 +71,7 @@ body, html {
     font-weight: 400;
     font-size: 18px;
     line-height: 25.2px;
-    color: #141414;
+    color: var(--black);
 }
 
 
@@ -69,11 +87,11 @@ body, html {
 .submit-btn {
     width: 171px;
     max-height: 46px;
-    border-radius: 4px;
+    border-radius: var(--CornerExtra-small);
     padding: 10px 15px 10px 15px;
     gap: 10px;
-    background-color: #F1B23E;
-    color: #141414;
+    background-color: var(--mustard);
+    color: var(--black);
     font-family: 'Public Sans', sans-serif; 
     font-weight: 400;
     font-size: 18px;
@@ -118,7 +136,7 @@ body, html {
     font-weight: 600;
     line-height: 63px;
     text-align: left;
-    color: #23395B;
+    color: var(--navy);
 }
 
 .Hero .text-btn h4 {
@@ -128,7 +146,7 @@ body, html {
     font-weight: 400;
     font-size: 28px;
     line-height: 39.2px;
-    color: #23395B;
+    color: var(--navy);
 }
 
 .Hero .text-btn p {
@@ -137,7 +155,7 @@ body, html {
     font-weight: 400;
     line-height: 33.6px;
     text-align: left;
-    color: #23395B;
+    color: var(--navy);
 }
 
 .Hero .text-btn span {
@@ -156,7 +174,7 @@ body, html {
 .Hero .img-container {
     width: 528px;
     height: 428px;
-    border-radius: 8px;
+    border-radius: var(--CornerSmall);
     position: relative;
     overflow: hidden;
 
@@ -175,7 +193,7 @@ body, html {
 
 .callout-box {
     max-width: 1200px;
-    border-radius: 8px;
+    border-radius: var(--CornerSmall);
     padding: 64px;
     gap: 64px;
     position: relative;
@@ -213,7 +231,7 @@ body, html {
     font-size: 18px;
     line-height: 25.2px;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 .callout-box .text-btn .group h2 {
@@ -222,7 +240,7 @@ body, html {
     font-weight: 600;
     font-size: 48px;
     line-height: 54px;
-    color: #FFFFFF;
+    color: var(--white);
     text-align: left;
 }
 
@@ -234,7 +252,7 @@ body, html {
     font-weight: 400;
     font-size: 24px;
     line-height: 33.6px;
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 
@@ -246,7 +264,7 @@ body, html {
     width: 528px;
     height: 428px;
     position: relative;
-    border-radius: 8px;
+    border-radius: var(--CornerSmall);
     overflow: hidden;
 }
 
@@ -269,7 +287,7 @@ body, html {
     padding-top: 64px;
     padding-bottom: 64px;
     gap: 48px;
-    background-color: #23395B;
+    background-color: var(--navy);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -284,7 +302,7 @@ body, html {
     font-size: 56px;
     line-height: 63px;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 .CTA .btn {
@@ -315,7 +333,7 @@ body, html {
     font-size: 48px;
     font-weight: 600;
     line-height: 54px;
-    color: #23395B;
+    color: var(--navy);
     text-align: center;
 }
 
@@ -344,7 +362,7 @@ body, html {
 .How .secondary .img-container {
     width: 528px;
     height: 457px;
-    border-radius: 8px;
+    border-radius: var(--CornerSmall);
     position: relative;
     overflow: hidden;
 }
@@ -369,7 +387,7 @@ body, html {
     font-size: 28px;
     font-weight: 600;
     line-height: 39.2px;
-    color: #23395B;
+    color: var(--navy);
     text-align: left;
 }
 
@@ -391,7 +409,7 @@ body, html {
     font-size: 18px;
     font-weight: 400;
     line-height: 25.2px;
-    color: #141414;
+    color: var(--black);
     text-align: left;
 }
 
@@ -400,10 +418,10 @@ body, html {
 
 .box {
     max-width: 568px;
-    border-radius: 8px;
+    border-radius: var(--CornerSmall);
     padding: 48px;
     gap: 32px;
-    background-color: #FFFFFF;
+    background-color: var(--white);
     position: absolute;
 }
 
@@ -459,7 +477,7 @@ body, html {
     font-size: 48px;
     font-weight: 600;
     line-height: 52px;
-    color: #23395B;
+    color: var(--navy);
 }
 
 
@@ -470,7 +488,7 @@ body, html {
     font-weight: 400;
     size: 18px;
     line-height: 25.2px;
-    color: #141414;
+    color: var(--black);
 }
 
 
@@ -483,7 +501,7 @@ body, html {
     font-weight: 600;
     size: 18px;
     line-height: 25.2px;
-    color: #23395B;
+    color: var(--navy);
 }
 
 

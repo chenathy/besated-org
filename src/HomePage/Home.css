@@ -1,6 +1,6 @@
 .HomePage {
     width: 100vw;
-    background-color: #F5F5F5;
+    background-color: var(--white);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,7 +8,7 @@
 
 .HomePage hr {
     width: 1200px;
-    border: 1.5px solid #4BBEDB;
+    border: 1.5px solid var(--blue);
 }
 
 .HomePage h2 {
@@ -51,7 +51,7 @@
     font-size: 56px;
     font-weight: 600;
     line-height: 63px;
-    color: #23395B;
+    color: var(--navy);
 }
 
 .Numbers .number p{
@@ -63,7 +63,7 @@
     line-height: 25.2px;
     text-align: center;
     justify-content: center;
-    color: #141414;
+    color: var(--black);
 }
 
 
@@ -103,14 +103,14 @@
     font-weight: 600;
     size: 18px;
     line-height: 25.2px;
-    color: #23395B;
+    color: var(--navy);
     margin-top: 10px;
 } */
 
 
 .HomePage .callout-box {
     max-height: 585px;
-    background-color: #23395B;
+    background-color: var(--navy);
 }
 
 .HomePage .callout-box .text-btn .group {
@@ -135,14 +135,11 @@
     height: 428px;
     overflow: hidden;
     position: relative;
-    border-radius: 8px;
+    border-radius: var(--CornerSmall);
 }
 
 .API .img-container img {
     position: absolute;
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
     object-fit: cover;
     left: -30%;
     width: 130%;
@@ -187,7 +184,7 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 33.6px;
-    color: #141414;
+    color: var(--black);
 }
 
 .API button {

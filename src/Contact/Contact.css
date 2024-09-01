@@ -1,6 +1,6 @@
 .Contact {
     width: 100vw;
-    background-color: #F5F5F5;
+    background-color: var(--white);
     display: grid;
     align-items: center;
     justify-content: center;
@@ -17,9 +17,9 @@
 .Contact .Form-section .form {
     width: 627px;
     /* max-height: 1630px; */
-    border-radius: 8px;
+    border-radius: var(--CornerSmall);
     padding: 64px;
-    background: #FFFFFF;
+    background: var(--white);
     box-shadow: 0px 4px 4px -4px #0C0C0D0D;
     box-shadow: 0px 16px 32px -4px #0C0C0D1A;
 }
@@ -60,7 +60,7 @@
 
 
 #req {
-    color: #A13D63;
+    color: var(--berry);
     justify-content: center;
 }
 
