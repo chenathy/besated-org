@@ -1,6 +1,6 @@
 .Attorneys {
     width: 100vw;
-    background-color: #F5F5F5;
+    background-color: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,9 +20,7 @@
     height: 428px;
     position: relative;
     overflow: hidden;
-    border-radius: 8px;
-
-    border: 1px dashed navy ;
+    border-radius: var(--CornerSmall);
 }
 
 .Attorneys .img-container img {
@@ -59,7 +57,7 @@
 .Attorneys .Info {
     width: 1200px;
     height: 510px;
-    border-radius: 8px;
+    border-radius: var(--CornerSmall);
 
     position: relative;
     justify-content: space-between;

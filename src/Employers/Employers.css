@@ -3,7 +3,7 @@
 
 .Employers {
     width: 100vw;
-    background-color: #F5F5F5;
+    background-color: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,7 +12,7 @@
 
 .Employers hr {
     width: 1200px;
-    border: 1.5px solid #4BBEDB;
+    border: 1.5px solid var(--blue);
 }
 
 .Employers h2 {
@@ -21,7 +21,7 @@
     font-size: 48px;
     font-weight: 600;
     line-height: 54px;
-    color: #23395B;
+    color: var(--navy);
     text-align: center;
 }
 
@@ -47,12 +47,12 @@
 .Benefits .benefits .benefit {
     width: 368px;
     height: 340px;
-    border-radius: 8px;
+    border-radius: var(--CornerSmall);
     /* padding:  32px 0 0 0; */
     padding-top: 32px;
     padding-left: 32px;
     gap: 32px;
-    background-color: #FFFFFF;
+    background-color: var(--white);
     box-shadow: 0px 4px 4px -4px #0C0C0D0D;
     box-shadow: 0px 16px 32px -4px #0C0C0D1A;
 }
@@ -77,7 +77,7 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 33.6px;
-    color: #23395B;
+    color: var(--navy);
 }
 
 .benefit .text p {
@@ -87,7 +87,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 25.2px;
-    color: #141414;
+    color: var(--black);
 }
 
 
@@ -117,7 +117,7 @@
 
 .Employers .callout-box {
     max-height: 605px;
-    background-color: #A13D63;
+    background-color: var(--berry);
 }
 
 .Employers .callout-box .text-btn .group {

@@ -4,7 +4,7 @@
     width: 100vw;
     height: 396px;
     text-align: center;
-    background-color: #23395B;
+    background-color: var(--navy);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,7 +14,7 @@
 hr {
     width: 1200px;
     border-width: 2px;
-    background-color: #23395B;
+    background-color: var(--navy);
 }
 
 .main {
@@ -45,7 +45,7 @@ hr {
 .menu p {
     max-width: 190px;
     height: 26px;
-    color: #FFFFFF;
+    color: var(--white);
     font-family: 'Public Sans', sans-serif;
     font-weight: 600;
     font-size: 18px;
@@ -71,7 +71,7 @@ hr {
 .copyright {
     width: 100%;
     height: 86px;
-    background-color: #F5F5F5;
+    background-color: var(--white);
     gap: 50px;
     display: flex;
     align-items: center;
@@ -83,7 +83,7 @@ hr {
     max-width: 271px;
     height: 26px;
     margin-top: 10px;
-    color: #141414;
+    color: var(--black);
     font-family: 'Public Sans', sans-serif; 
     font-weight: 400;
     font-size: 18px;
