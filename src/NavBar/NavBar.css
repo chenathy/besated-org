@@ -6,11 +6,9 @@
 
 .navbar-container {
     width: 100vw;
-    background-color: var(--white);
 }
 
 .navbar {
-    background-color: var(--white);
     display: flex;
     align-items: center; 
     position: relative;
@@ -56,7 +54,7 @@
     height: 26;
     width: auto;
     display: block;
-    color: var(--navy);
+    color: var(--cyan);
     text-align: left; 
     padding: 14px 20px;
     text-decoration: none;

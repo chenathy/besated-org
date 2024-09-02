@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import logo from '../../public/assets/icons/Bestated_navy_logo.svg';
+import logo from '../../public/assets/icons/logo-neon-green.svg';
 import './NavBar.css';
 
 const NavBar = () => {
